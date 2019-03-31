@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Бутримов](https://up.htmlacademy.ru/adaptive/16/user/585503).
-* Наставник: `Неизвестно`.
+* Наставник: `Ирина Малиновская`.
 
 ---
 
