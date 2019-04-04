@@ -5,20 +5,22 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-    <div class="wrapper">
-      <div class="intro">
-        <div class="logo">Pink</div>
-        <div class="intro__menu-toggle">&times</div>
+    <header class="menu">
+      <div class="wrapper">
+        <div class="menu__head">
+          <div class="menu__logo">Pink</div>
+          <div class="menu__menu-toggle">&times</div>
+        </div>
+        <nav class="menu__container">
+          <ul class="menu__list">
+            <li class="menu__item">Главная</li>
+            <li class="menu__item">Фотографии</li>
+            <li class="menu__item">Конкурс</li>
+            <li class="menu__item">HTML Academy</li>
+          </ul>
+        </nav>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">Главная</li>
-          <li class="menu__item">Фотографии</li>
-          <li class="menu__item">Конкурс</li>
-          <li class="menu__item">HTML Academy</li>
-        </ul>
-      </nav>
-    </div>
+    </header>
     <main>
       <div class="wrapper">
         <div class="description">
@@ -32,7 +34,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Анна (5 минут назад)</p>
-            <p class="photos-users__user-coment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photos-users__user-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <p class="photos-users__likes">Нравится: 215</p>
           </div>
         </div>
@@ -40,7 +42,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Левон (5 часов назад)</p>
-            <p class="photos-users__user-coment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="photos-users__user-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <p class="photos-users__likes">Нравится: 356</p>
           </div>
         </div>
@@ -48,7 +50,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Антон (12 часов назад)</p>
-            <p class="photos-users__user-coment">Соседи будут рады!</p>
+            <p class="photos-users__user-comment">Соседи будут рады!</p>
             <p class="photos-users__likes">Нравится: 666</p>
           </div>
         </div>
@@ -56,7 +58,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Борис (20 часов назад)</p>
-            <p class="photos-users__user-coment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="photos-users__user-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <p class="photos-users__likes">Нравится: 215</p>
           </div>
         </div>
@@ -64,7 +66,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Сергей (25 часов назад)</p>
-            <p class="photos-users__user-coment">Самая кубанская в мире!</p>
+            <p class="photos-users__user-comment">Самая кубанская в мире!</p>
             <p class="photos-users__likes">Нравится: 4</p>
           </div>
         </div>
@@ -72,7 +74,7 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Максим (40 часов назад)</p>
-            <p class="photos-users__user-coment">Где снег-то?</p>
+            <p class="photos-users__user-comment">Где снег-то?</p>
             <p class="photos-users__likes">Нравится: 150</p>
           </div>
         </div>
@@ -80,15 +82,15 @@
           <img src="http://placehold.it/280x180" class="photos-users__image">
           <div class="photos-users__custom-data">
             <p class="photos-users__user-name">Надежда (45 часов назад)</p>
-            <p class="photos-users__user-coment">Всем GM и взаимные лайки!</p>
+            <p class="photos-users__user-comment">Всем GM и взаимные лайки!</p>
             <p class="photos-users__likes">Нравится: 2560</p>
           </div>
         </div>
       </div>
     </main>
-    <div class="finale">
+    <footer class="footer">
       <div class="wrapper">
-        <div class="logo">
+        <div class="footer__logo">
           <img src="http://placehold.it/45x45"> Pink
         </div>
         <div class="social">
@@ -107,7 +109,7 @@
             <img src="http://placehold.it/45x45"></a>
         </div>
       </div>
-    </div>
+    </footer>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
