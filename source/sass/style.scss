@@ -1,1 +1,39 @@
+* {
+  outline: 1px solid red;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/opensans.woff2) format("woff2"),
+  url(../fonts/opensans.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url(../fonts/opensansbold.woff2) format("woff2"),
+  url(../fonts/opensansbold.woff) format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../fonts/opensanslight.woff2) format("woff2"),
+  url(../fonts/opensanslight.woff) format("woff");
+  font-style: normal;
+  font-weight: lighter;
+}
+@import "button.scss";
+@import "description.scss";
+@import "developed.scss";
+@import "download.scss";
+@import "footer.scss";
 @import "menu.scss";
+@import "platform.scss";
+@import "social.scss";
+@import "why-pink.scss";
+body {
+  font-family: "Open Sans";
+  padding: 0;
+  margin: 0;
+}
+

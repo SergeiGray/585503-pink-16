@@ -1,1 +1,56 @@
-body { background: red; }
+@mixin list-reset() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@mixin link-in-menu {
+  color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    color: #d22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  background-color: #283645;
+  text-transform: uppercase;
+}
+.menu__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 281px;
+}
+.menu__head {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.menu__logo {
+  font-size: 32px;
+  @include link-in-menu();
+}
+.menu__menu-toggle {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+.menu__list {
+  @include list-reset();
+}
+.menu__link {
+    @include link-in-menu();
+}

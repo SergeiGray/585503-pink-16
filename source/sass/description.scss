@@ -1,0 +1,21 @@
+@mixin background-image() {
+  min-width: 320px;
+  min-height: 462px;
+  background-color: #283645;
+}
+.description-- {
+  &index-page{
+    background: url(../img/iphone-hand-mobile@1x.png) no-repeat left 176px,
+    url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
+    @include background-image();
+    padding-top: 462px;
+  }
+  &form-page {
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
+    @include background-image();
+  }
+  &photo-page {
+    background: url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
+    @include background-image();
+  }
+}
