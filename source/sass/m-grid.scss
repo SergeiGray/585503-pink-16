@@ -1,0 +1,24 @@
+.m-grid {
+  display: flex;
+  flex-direction: column;
+  &__head {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  &__head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 69px;
+    width: 280px;
+  }
+  &__item {
+    min-height: 63px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

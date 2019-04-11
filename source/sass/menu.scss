@@ -18,39 +18,32 @@
   justify-content: center;
   background-color: #283645;
   text-transform: uppercase;
-}
-.menu__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 281px;
-}
-.menu__head {
-    display: flex;
-    justify-content: space-between;
+  &__head {
+    border-bottom: 1px solid transparent;
     box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-.menu__logo {
-  font-size: 32px;
-  @include link-in-menu();
-}
-.menu__menu-toggle {
-  font-size: 45px;
-  font-weight: bold;
-  color: #ffffff;
-}
-.menu__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 32px;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-}
-.menu__list {
-  @include list-reset();
-}
-.menu__link {
+  }
+  &__logo {
+    width: 75px;
+    height: 22px;
+    background: url(../img/logo-pink-white-mobile.svg) no-repeat;
     @include link-in-menu();
+  }
+  &__menu-toggle {
+    width: 24px;
+    height: 23px;
+    background: url(../img/icon-menu-cross.svg) no-repeat;
+  }
+  &__item {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+  &__list {
+    @include list-reset();
+  }
+  &__link {
+    @include link-in-menu();
+  }
 }

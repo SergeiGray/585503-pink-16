@@ -1,0 +1,20 @@
+.w-grid {
+  &__questions-list {
+    padding-top: 46px;
+  }
+  &__question {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  &__benefit-header {
+    margin: 0;
+    padding-top: 20px;
+  }
+  &__benefit-paragraph {
+    margin: 0;
+  }
+  &__benefits-list {
+    width: 255px;
+    margin: 0;
+  }
+}

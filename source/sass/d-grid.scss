@@ -1,0 +1,30 @@
+.d-grid {
+  margin-top: -67px;
+  padding-top: 491px;
+  &__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+  }
+  &__platform {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+  }
+  &__button {
+    align-self: stretch;
+    margin-bottom: 30px;
+  }
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__text {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+}
