@@ -1,4 +1,6 @@
-
+* {
+  outline: 1px solid red;
+}
 @font-face {
   font-family: "Open Sans";
   src: url(../fonts/opensans.woff2) format("woff2"),
@@ -25,6 +27,7 @@
 @import "description.scss";
 @import "developed.scss";
 @import "download.scss";
+@import "f-grid.scss";
 @import "footer.scss";
 @import "m-grid.scss";
 @import "menu.scss";
