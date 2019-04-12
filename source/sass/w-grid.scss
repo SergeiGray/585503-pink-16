@@ -1,4 +1,8 @@
 .w-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__questions-list {
     padding-top: 46px;
   }
@@ -7,14 +11,30 @@
     padding-bottom: 20px;
   }
   &__benefit-header {
-    margin: 0;
-    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 12px;
   }
   &__benefit-paragraph {
-    margin: 0;
+      margin-top: 0;
+      margin-bottom: 34px;
   }
   &__benefits-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 255px;
-    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+    margin-bottom: 0;
+  }
+  &__benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__image {
+    margin-top: -42px;
   }
 }

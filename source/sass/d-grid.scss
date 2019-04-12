@@ -1,6 +1,5 @@
 .d-grid {
   margin-top: -67px;
-  padding-top: 491px;
   &__download {
     display: flex;
     flex-direction: column;
@@ -28,3 +27,18 @@
     margin-bottom: 35px;
   }
 }
+.description--index-page.d-grid {
+  padding-top: 491px;
+}
+.description--photo-page.d-grid,
+.description--form-page.d-grid {
+  box-sizing: border-box;
+  padding-top: 100px;
+  min-height: 235px;
+}
+.d-grid__signature {
+  width: 250px;
+  text-align: center;
+}
+
+

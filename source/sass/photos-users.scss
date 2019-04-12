@@ -1,26 +1,30 @@
 .photos-users {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: #283645;
   font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
-  &__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  line-height: 24px;
   &__custom-data {
-    width: 280px;
     background-color: #f2f2f2;
-  }
-  &__wrapper {
+    box-sizing: border-box;
     width: 280px;
+    padding-top: 15px;
+    padding-left: 17px;
+  }
+  &__signature {
+    width: 250px;
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 35px;
   }
   &__user-name {
     font-weight: 700;
+    margin: 0;
+  }
+  &__user-comment {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   &__time-of-publication {
     text-transform: uppercase;
@@ -31,8 +35,9 @@
     color: #d22856;
     font-size: 12px;
     font-weight: 400;
-    line-height: 24px;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
   &__image {
     width: 280px;

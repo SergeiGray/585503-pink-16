@@ -1,6 +1,5 @@
 @mixin background-image() {
   min-width: 320px;
-  min-height: 462px;
   box-sizing: border-box;
   background-color: #283645;
 }
@@ -9,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   &--index-page{
+    min-height: 462px;
     background: url(../img/iphone-hand-mobile@1x.png) no-repeat left 176px,
     url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
     @include background-image();

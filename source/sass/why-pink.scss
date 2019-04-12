@@ -11,14 +11,12 @@
   }
   &__benefits-list {
     list-style: none;
-    padding: 0;
   }
   &__benefit-header {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
-    margin: 0;
   }
   &__benefit-paragraph {
     font-size: 14px;
@@ -26,9 +24,8 @@
     font-weight: 400;
     text-align: center;
   }
-  &__benefits-list {
-  }
   &__image {
+    width: 157px;
     height: 320px;
     background: url(../img/iphone-screen-mobile@1x.png) no-repeat  center 45px;
   }
