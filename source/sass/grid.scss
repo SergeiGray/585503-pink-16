@@ -1,0 +1,127 @@
+/*mixin*/
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*grid-for-menu*/
+.grid-for-menu {
+  @include flex-column;
+}
+.grid-for-menu__head {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.grid-for-menu__head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 69px;
+  width: 280px;
+}
+.grid-for-menu__item {
+  min-height: 63px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*grid-for-description*/
+.grid-for-description {
+  margin-top: -67px;
+}
+.grid-for-description__download {
+  @include flex-column;
+  width: 280px;
+}
+.grid-for-description__platform {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+.grid-for-description__button {
+  align-self: stretch;
+  margin-bottom: 30px;
+}
+.grid-for-description__icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.grid-for-description__text {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+.grid-for-description__signature {
+  width: 250px;
+  text-align: center;
+}
+.grid-for-description--index-page {
+  padding-top: 491px;
+}
+.grid-for-description--photo-page,
+.grid-for-description--form-page {
+  box-sizing: border-box;
+  padding-top: 100px;
+  min-height: 235px;
+}
+/*grid-for-why-pink*/
+.grid-for-why-pink {
+  @include flex-column;
+  justify-content: center;
+}
+.grid-for-why-pink__questions-list {
+  padding-top: 46px;
+}
+.grid-for-why-pink__question {
+  margin: 0;
+  padding-bottom: 20px;
+}
+.grid-for-why-pink__benefit-header {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.grid-for-why-pink__benefit-paragraph {
+  margin-top: 0;
+  margin-bottom: 34px;
+}
+.grid-for-why-pink__benefits-list {
+  @include flex-column;
+  justify-content: center;
+  width: 255px;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.grid-for-why-pink__benefit {
+  @include flex-column;
+  justify-content: center;
+}
+.grid-for-why-pink__image {
+  margin-top: -42px;
+}
+/*grid-for-photos-users*/
+.grid-for-photos-users {
+  @include flex-column;
+}
+.grid-for-photos-users__wrapper {
+  width: 280px;
+}
+.grid-for-photos-users__item {
+  @include flex-column;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+/*grid-for-footer*/
+.grid-for-footer {
+  padding-top: 20px;
+}
+.grid-for-footer__logo {
+  padding-bottom: 45px;
+}
+.grid-for-footer__social {
+  margin-bottom: 35px;
+}

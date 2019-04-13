@@ -1,45 +1,13 @@
-* {
-  outline: 1px solid red;
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/opensans.woff2) format("woff2"),
-  url(../fonts/opensans.woff) format("woff");
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url(../fonts/opensansbold.woff2) format("woff2"),
-  url(../fonts/opensansbold.woff) format("woff");
-  font-style: normal;
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Open Sans Light";
-  src: url(../fonts/opensanslight.woff2) format("woff2"),
-  url(../fonts/opensanslight.woff) format("woff");
-  font-style: normal;
-  font-weight: lighter;
-}
+@import "scaffolding.scss";
+@import "fonts.scss";
 @import "button.scss";
-@import "d-grid.scss";
+@import "grid.scss";
 @import "description.scss";
 @import "developed.scss";
 @import "download.scss";
-@import "f-grid.scss";
 @import "footer.scss";
-@import "m-grid.scss";
 @import "menu.scss";
-@import "p-grid.scss";
 @import "photos-users.scss";
 @import "platform.scss";
 @import "social.scss";
-@import "w-grid.scss";
 @import "why-pink.scss";
-body {
-  font-family: "Open Sans";
-  padding: 0;
-  margin: 0;
-}
-

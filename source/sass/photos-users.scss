@@ -3,69 +3,69 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  &__custom-data {
-    background-color: #f2f2f2;
-    box-sizing: border-box;
-    width: 280px;
-    padding-top: 15px;
-    padding-left: 17px;
-  }
-  &__signature {
-    width: 250px;
-    text-align: center;
-    margin-top: 45px;
-    margin-bottom: 35px;
-  }
-  &__user-name {
-    font-weight: 700;
-    margin: 0;
-  }
-  &__user-comment {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  &__time-of-publication {
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 300;
-  }
-  &__likes {
-    color: #d22856;
-    font-size: 12px;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  &__image {
-    width: 280px;
-    height: 180px;
-    background-size: 100% 100%;
-  }
-  &__image--panorama {
-    width: 100vw;
-    height: calc(100vw / 2.33);
-    background: url(../img/panorama-mobile@1x.jpg) no-repeat ;
-    background-size: 100% 100%;
-  }
-  &__image--first-post {
-    background: url(../img/photo-car-mobile@1x.jpg) no-repeat ;
-  }
-  &__image--second-post {
-    background: url(../img/photo-drumset-mobile@1x.jpg) no-repeat ;
-  }
-  &__image--third-post {
-     background: url(../img/photo-window-mobile@1x.jpg) no-repeat ;
-  }
-    &__image--fourth-post {
-    background: url(../img/photo-fair-mobile@1x.jpg) no-repeat ;
-  }
-    &__image--fifth-post {
-    background: url(../img/photo-pov-mobile@1x.jpg) no-repeat ;
-  }
-    &__image--sixth-post {
-    background: url(../img/photo-wing-mobile@1x.jpg) no-repeat ;
-  }
+}
+.photos-users__custom-data {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  width: 280px;
+  padding-top: 15px;
+  padding-left: 17px;
+}
+.photos-users__signature {
+  width: 250px;
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 35px;
+}
+.photos-users__user-name {
+  font-weight: 700;
+  margin: 0;
+}
+.photos-users__user-comment {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.photos-users__time-of-publication {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+}
+.photos-users__likes {
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.photos-users__image {
+  width: 280px;
+  height: 180px;
+  background-size: 100% 100%;
+}
+.photos-users__image--panorama {
+  width: 100vw;
+  height: calc(100vw / 2.33);
+  background: url(../img/panorama-mobile@1x.jpg) no-repeat ;
+  background-size: 100% 100%;
+}
+.photos-users__image--first-post {
+  background: url(../img/photo-car-mobile@1x.jpg) no-repeat ;
+}
+.photos-users__image--second-post {
+  background: url(../img/photo-drumset-mobile@1x.jpg) no-repeat ;
+}
+.photos-users__image--third-post {
+  background: url(../img/photo-window-mobile@1x.jpg) no-repeat ;
+}
+.photos-users__image--fourth-post {
+  background: url(../img/photo-fair-mobile@1x.jpg) no-repeat ;
+}
+.photos-users__image--fifth-post {
+  background: url(../img/photo-pov-mobile@1x.jpg) no-repeat ;
+}
+.photos-users__image--sixth-post {
+  background: url(../img/photo-wing-mobile@1x.jpg) no-repeat ;
 }
