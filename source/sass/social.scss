@@ -18,6 +18,8 @@
 }
 .social__facebook {
   @include social-icon-size;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 .social__youtube {
   @include social-icon-size;

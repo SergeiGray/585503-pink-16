@@ -2,6 +2,7 @@
   background-color: #f2f2f2;
 }
 .why-pink__questions-list {
+  min-width: 100%;
   background-color: #ffffff;
 }
 .why-pink__question {
@@ -10,23 +11,93 @@
   font-size: 24px;
   font-weight: 300;
 }
+@media (min-width: 321px) {
+  .why-pink__question {
+    font-size: 40px;
+  }
+}
+.why-pink__gradient-separator {
+  min-width: 100%;
+  min-height: 90px;
+  background: linear-gradient(175deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
+}
+@media (min-width: 321px) {
+  .why-pink__gradient-separator {
+    background: linear-gradient(177deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
+  }
+}
 .why-pink__benefits-list {
   list-style: none;
 }
 .why-pink__benefit-header {
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
 }
 .why-pink__benefit-paragraph {
+  color: #283645;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   text-align: center;
 }
-.why-pink__image {
+@media (min-width: 321px) {
+  .why-pink__benefit-paragraph {
+    text-align: left;
+  }
+}
+.why-pink__benefits-image {
   width: 157px;
   height: 320px;
   background: url(../img/iphone-screen-mobile@1x.png) no-repeat  center 45px;
+}
+@media (min-width: 321px) {
+  .why-pink__benefits-image {
+    width: 268px;
+    height: 481px;
+    background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat  center top;
+  }
+}
+.why-pink__last-benefit {
+  display: none;
+  color: #283645;
+  background-color: #ffffff;
+}
+@media (min-width: 321px) {
+  .why-pink__last-benefit {
+    display: inline-block;
+  }
+}
+.why-pink__last-benefit-header {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.why-pink__last-benefit-image {
+  position: relative;
+  width: 238px;
+  height: 276px;
+  background: url(../img/icon-timer.svg);
+  background-size: 238px 276px;
+}
+.why-pink__24hours {
+  position: absolute;
+  top: -40px;
+  left: 19px;
+  box-sizing: border-box;
+  width: 202px;
+  height: 202px;
+  color: #d22856;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 149.47px;
+  border-radius: 100%;
+  border: 13px solid #d22856;
+  text-align: center;
+}
+.why-pink__last-benefit-link {
+  color: #d22856;
 }

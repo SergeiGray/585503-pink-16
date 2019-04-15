@@ -9,7 +9,7 @@
   @include flex-column;
 }
 .grid-for-menu__head {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -18,7 +18,12 @@
   justify-content: space-between;
   align-items: center;
   min-height: 69px;
-  width: 280px;
+  width: 100vw;
+}
+@media (min-width: 321px) {
+  .grid-for-menu__head-wrapper {
+    width: 700px;
+  }
 }
 .grid-for-menu__item {
   min-height: 63px;
@@ -29,11 +34,22 @@
 }
 /*grid-for-description*/
 .grid-for-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: -67px;
 }
 .grid-for-description__download {
   @include flex-column;
-  width: 280px;
+    width: 280px;
+}
+@media (min-width: 321px) {
+  .grid-for-description__download {
+    margin-left: 20px;
+  }
+}
+.grid-for-description__slogan {
+  padding-bottom: 35px;
 }
 .grid-for-description__platform {
   display: flex;
@@ -44,11 +60,21 @@
   align-self: stretch;
   margin-bottom: 30px;
 }
+@media (min-width: 321px) {
+  .grid-for-description__button {
+    margin-bottom: 50px;
+  }
+}
 .grid-for-description__icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-bottom: 30px;
+}
+@media (min-width: 321px) {
+  .grid-for-description__icons {
+    margin-bottom: 40px;
+  }
 }
 .grid-for-description__text {
   text-align: center;
@@ -61,6 +87,12 @@
 }
 .grid-for-description--index-page {
   padding-top: 491px;
+}
+@media (min-width: 321px) {
+  .grid-for-description--index-page {
+    padding-top: 175px;
+    align-items: flex-start;
+  }
 }
 .grid-for-description--photo-page,
 .grid-for-description--form-page {
@@ -75,10 +107,55 @@
 }
 .grid-for-why-pink__questions-list {
   padding-top: 46px;
+  padding-bottom: 20px;
+}
+.grid-for-why-pink__questions-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .grid-for-why-pink__question {
   margin: 0;
   padding-bottom: 20px;
+  &--second-question {
+    max-width: 350px;
+  }
+}
+.grid-for-why-pink__benefits-list {
+  @include flex-column;
+  justify-content: center;
+  width: 255px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 321px) {
+  .grid-for-why-pink__benefits-list {
+    width: 295px;
+    margin-right: 20px;
+  }
+}
+.grid-for-why-pink__benefits-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 321px) {
+  .grid-for-why-pink__benefits-list-wrapper {
+    width: 100vw;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.grid-for-why-pink__benefit {
+  @include flex-column;
+  justify-content: center;
+}
+@media (min-width: 321px) {
+  .grid-for-why-pink__benefit {
+    align-items: flex-start;
+  }
 }
 .grid-for-why-pink__benefit-header {
   margin-top: 0;
@@ -87,21 +164,31 @@
 .grid-for-why-pink__benefit-paragraph {
   margin-top: 0;
   margin-bottom: 34px;
+  &--last-child {
+    margin-bottom: 0;
+  }
 }
-.grid-for-why-pink__benefits-list {
-  @include flex-column;
-  justify-content: center;
-  width: 255px;
-  padding: 0;
-  margin-top: 70px;
-  margin-bottom: 0;
+.grid-for-why-pink__benefits-image {
+  margin-top: 0px;
 }
-.grid-for-why-pink__benefit {
-  @include flex-column;
-  justify-content: center;
+@media (min-width: 321px) {
+  .grid-for-why-pink__benefits-image {
+    margin-top: -80px;
+    margin-left: 20px;
+  }
 }
-.grid-for-why-pink__image {
-  margin-top: -42px;
+.grid-for-why-pink__last-benefit {
+  width: 100vw;
+  padding-top: 60px;
+}
+.grid-for-why-pink__last-benefit-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.grid-for-why-pink__last-benefit-container {
+  max-width: 295px;
 }
 /*grid-for-photos-users*/
 .grid-for-photos-users {
@@ -119,9 +206,33 @@
 .grid-for-footer {
   padding-top: 20px;
 }
+@media (min-width: 321px) {
+  .grid-for-footer {
+    padding-top: 0;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+}
+.grid-for-footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .grid-for-footer__logo {
   padding-bottom: 45px;
 }
+@media (min-width: 321px) {
+  .grid-for-footer__logo {
+    padding-bottom: 0;
+  }
+}
 .grid-for-footer__social {
   margin-bottom: 35px;
+}
+@media (min-width: 321px) {
+  .grid-for-footer__social {
+    margin-bottom: 0;
+  }
 }

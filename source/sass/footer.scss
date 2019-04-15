@@ -4,3 +4,17 @@
     height: 40px;
     background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
   }
+@media (min-width: 321px) {
+  .footer__logo {
+    margin: 0;
+  }
+}
+.footer--index-page {
+  display: none;
+}
+@media (min-width: 321px) {
+  .footer {
+    display: inline-block;
+    width: 100vw;
+  }
+}

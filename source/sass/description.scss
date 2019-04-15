@@ -4,13 +4,10 @@
   background-color: #283645;
 }
 .description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   &--index-page {
     min-height: 462px;
     background: url(../img/iphone-hand-mobile@1x.png) no-repeat left 176px,
-    url(../img/bg-back-mobile@1x.jpg) no-repeat center top;
+    url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
     @include background-image;
   }
   &--form-page {
@@ -20,6 +17,24 @@
   &--photo-page {
     background: url(../img/bg-back-mobile@1x.jpg) no-repeat top center;
     @include background-image;
+  }
+}
+@media (min-width: 321px) {
+  .description {
+    &--index-page {
+      min-height: 729px;
+      background: url(../img/iphone-hand-tablet@1x.png) no-repeat bottom center,
+      url(../img/bg-back-tablet@1x.jpg) no-repeat center top;
+      @include background-image;
+    }
+    &--form-page {
+      background: url(../img/bg-back-tablet@1x.jpg) no-repeat top center;
+      @include background-image;
+    }
+    &--photo-page {
+      background: url(../img/bg-back-tablet@1x.jpg) no-repeat top center;
+      @include background-image;
+    }
   }
 }
 .description__signature {

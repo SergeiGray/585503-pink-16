@@ -26,12 +26,21 @@
 .menu__logo {
   width: 75px;
   height: 22px;
+  margin-left: 20px;
   background: url(../img/logo-pink-white-mobile.svg) no-repeat;
   @include link-in-menu;
+}
+@media (min-width: 321px){
+  .menu__logo {
+    width: 147px;
+    height: 40px;
+    background: url(../img/logo-pink-white-tablet.svg) no-repeat;
+  }
 }
 .menu__menu-toggle {
   width: 24px;
   height: 23px;
+  margin-right: 20px;
   background: url(../img/icon-menu-cross.svg) no-repeat;
 }
 .menu__item {
