@@ -4,14 +4,36 @@
   flex-direction: column;
   align-items: center;
 }
+/*wrapper*/
+@media (min-width: 661px) {
+  .wrapper {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
 /*grid-for-menu*/
 .grid-for-menu {
   @include flex-column;
+}
+@media (min-width: 661px) {
+  .grid-for-menu {
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }
 .grid-for-menu__head {
   max-width: 100vw;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 661px) {
+  .grid-for-menu__head {
+    width: auto;
+    margin-right: 80px;
+  }
 }
 .grid-for-menu__head-wrapper {
   display: flex;
@@ -25,12 +47,44 @@
     width: 700px;
   }
 }
+@media (min-width: 661px) {
+  .grid-for-menu__head-wrapper {
+    width: auto;
+    min-height: auto;
+  }
+}
 .grid-for-menu__item {
   min-height: 63px;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 661px) {
+  .grid-for-menu__item {
+    width: auto;
+  }
+}
+.grid-for-menu__container {
+  display: flex;
+}
+@media (min-width: 661px) {
+  .grid-for-menu__container {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}
+.grid-for-menu__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 661px) {
+  .grid-for-menu__list {
+    max-width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }
 /*grid-for-description*/
 .grid-for-description {
@@ -39,6 +93,11 @@
   align-items: center;
   margin-top: -67px;
 }
+@media (min-width: 661px) {
+  .grid-for-description {
+    margin-top: -110px;
+  }
+}
 .grid-for-description__download {
   @include flex-column;
     width: 280px;
@@ -46,6 +105,11 @@
 @media (min-width: 321px) {
   .grid-for-description__download {
     margin-left: 20px;
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-description__download {
+    margin-left: 0;
   }
 }
 .grid-for-description__slogan {
@@ -94,6 +158,12 @@
     align-items: flex-start;
   }
 }
+@media (min-width: 661px) {
+  .grid-for-description--index-page {
+    padding-top: 215px;
+    align-items: flex-start;
+  }
+}
 .grid-for-description--photo-page,
 .grid-for-description--form-page {
   box-sizing: border-box;
@@ -106,8 +176,14 @@
   justify-content: center;
 }
 .grid-for-why-pink__questions-list {
-  padding-top: 46px;
+  padding-top: 45px;
   padding-bottom: 20px;
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__questions-list {
+    padding-top: 65px;
+    padding-bottom: 40px;
+  }
 }
 .grid-for-why-pink__questions-list-wrapper {
   display: flex;
@@ -119,6 +195,13 @@
   padding-bottom: 20px;
   &--second-question {
     max-width: 350px;
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__question {
+    &--second-question {
+      max-width: 450px;
+    }
   }
 }
 .grid-for-why-pink__benefits-list {
@@ -135,6 +218,14 @@
     margin-right: 20px;
   }
 }
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefits-list {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+}
 .grid-for-why-pink__benefits-list-wrapper {
   display: flex;
   flex-direction: column;
@@ -148,6 +239,13 @@
     align-items: flex-start;
   }
 }
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefits-list-wrapper {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 .grid-for-why-pink__benefit {
   @include flex-column;
   justify-content: center;
@@ -157,14 +255,31 @@
     align-items: flex-start;
   }
 }
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefit {
+    max-width: 235px;
+    align-items: center;
+  }
+}
 .grid-for-why-pink__benefit-header {
   margin-top: 0;
   margin-bottom: 12px;
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefit-header {
+    max-width: 215px;
+    margin-bottom: 25px;
+  }
 }
 .grid-for-why-pink__benefit-paragraph {
   margin-top: 0;
   margin-bottom: 34px;
   &--last-child {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefit-paragraph {
     margin-bottom: 0;
   }
 }
@@ -175,6 +290,12 @@
   .grid-for-why-pink__benefits-image {
     margin-top: -80px;
     margin-left: 20px;
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__benefits-image {
+    margin-top: -80px;
+    margin-left: 0;
   }
 }
 .grid-for-why-pink__last-benefit {

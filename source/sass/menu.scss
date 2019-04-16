@@ -17,7 +17,12 @@
   display: flex;
   justify-content: center;
   background-color: #283645;
-  text-transform: uppercase;
+}
+@media (min-width: 661px) {
+  .menu {
+    min-height: 110px;
+    background-opacity: 0.3;
+  }
 }
 .menu__head {
   border-bottom: 1px solid transparent;
@@ -37,18 +42,37 @@
     background: url(../img/logo-pink-white-tablet.svg) no-repeat;
   }
 }
+@media (min-width: 661px) {
+  .menu__logo {
+    margin-left: 0;
+    background: url(../img/logo-pink-white-desktop.svg) no-repeat;
+  }
+}
 .menu__menu-toggle {
   width: 24px;
   height: 23px;
   margin-right: 20px;
   background: url(../img/icon-menu-cross.svg) no-repeat;
 }
+@media (min-width: 661px) {
+  .menu__menu-toggle {
+    display: none;
+  }
+}
 .menu__item {
   font-size: 18px;
+  text-transform: uppercase;
   font-weight: bold;
   line-height: 32px;
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+@media (min-width: 661px) {
+  .menu__item {
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 18px;
+  }
 }
 .menu__list {
   @include list-reset;

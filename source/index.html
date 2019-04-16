@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="menu">
-      <div class="grid-for-menu">
+      <div class="grid-for-menu wrapper">
         <div class="menu__head grid-for-menu__head">
           <div class="grid-for-menu__head-wrapper">
             <a href="" class="menu__logo"></a>
@@ -16,8 +16,8 @@
             </div>
           </div>
         </div>
-        <nav class="menu__container">
-          <ul class="menu__list">
+        <nav class="menu__container grid-for-menu__container">
+          <ul class="menu__list grid-for-menu__list">
             <li class="menu__item grid-for-menu__item">
               <a href="index.html" class="menu__link">Главная</a>
             </li>
@@ -35,23 +35,24 @@
       </div>
     </header>
     <main>
-      <div class="wrapper">
-        <div class="description description--index-page grid-for-description grid-for-description--index-page">
-          <div class="download grid-for-description__download">
-            <p class="download__slogan grid-for-description__slogan">Взгляните на жизнь иначе!</p>
-            <a href="" class="button grid-for-description__button">Скачать приложение</a>
-            <div class="platform grid-for-description__platform">
-              <div class="platform__icons grid-for-description__icons">
-                <img src="img/logo-apple.svg" alt="IPhone IPad" width="47" height="56" class="platform__icon">
-                <img src="img/logo-android.svg" alt="Android" width="43" height="47" class="platform__icon">
-                <img src="img/logo-microsoft.svg" alt="Windiws 8" width="44" height="41" class="platform__icon">
+      <div class="description description--index-page grid-for-description grid-for-description--index-page">
+          <div class="wrapper">
+            <div class="download grid-for-description__download">
+              <p class="download__slogan grid-for-description__slogan">Взгляните на жизнь иначе!</p>
+              <a href="" class="button grid-for-description__button">Скачать приложение</a>
+              <div class="platform grid-for-description__platform">
+                <div class="platform__icons grid-for-description__icons">
+                  <img src="img/logo-apple.svg" alt="IPhone IPad" width="47" height="56" class="platform__icon">
+                  <img src="img/logo-android.svg" alt="Android" width="43" height="47" class="platform__icon">
+                  <img src="img/logo-microsoft.svg" alt="Windiws 8" width="44" height="41" class="platform__icon">
+                </div>
+                <p class="platform__text grid-for-description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+                </p>
               </div>
-              <p class="platform__text grid-for-description__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-              </p>
             </div>
           </div>
-        </div>
-        <div class="why-pink grid-for-why-pink">
+      </div>
+      <div class="why-pink grid-for-why-pink">
           <div class="why-pink__questions-list grid-for-why-pink__questions-list">
             <div class="grid-for-why-pink__questions-list-wrapper">
               <h2 class="why-pink__question grid-for-why-pink__question">Устали от серости мегаполиса?</h2>
@@ -59,7 +60,7 @@
             </div>
           </div>
           <div class="why-pink__gradient-separator"></div>
-          <div class="grid-for-why-pink__benefits-list-wrapper">
+          <div class="grid-for-why-pink__benefits-list-wrapper wrapper">
             <ul class="why-pink__benefits-list grid-for-why-pink__benefits-list">
               <li class="why-pink__benefit grid-for-why-pink__benefit">
                 <h2 class="why-pink__benefit-header grid-for-why-pink__benefit-header">Поднимает настроение</h2>
@@ -90,7 +91,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </main>
     <footer class="footer footer--index-page grid-for-footer">
