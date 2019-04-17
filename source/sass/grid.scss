@@ -7,7 +7,7 @@
 /*wrapper*/
 @media (min-width: 661px) {
   .wrapper {
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
   }
 }
@@ -21,11 +21,10 @@
     margin-left: 20px;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
   }
 }
 .grid-for-menu__head {
-  max-width: 100vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
 }
@@ -40,7 +39,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 69px;
-  width: 100vw;
+  width: 100%;
 }
 @media (min-width: 321px) {
   .grid-for-menu__head-wrapper {
@@ -221,9 +220,12 @@
 @media (min-width: 661px) {
   .grid-for-why-pink__benefits-list {
     width: 100%;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 0;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 .grid-for-why-pink__benefits-list-wrapper {
@@ -233,7 +235,6 @@
 }
 @media (min-width: 321px) {
   .grid-for-why-pink__benefits-list-wrapper {
-    width: 100vw;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
@@ -296,11 +297,13 @@
   .grid-for-why-pink__benefits-image {
     margin-top: -80px;
     margin-left: 0;
+    margin-bottom: 55px;
   }
 }
 .grid-for-why-pink__last-benefit {
-  width: 100vw;
+  width: 100%;
   padding-top: 60px;
+  padding-bottom: 65px;
 }
 .grid-for-why-pink__last-benefit-wrapper {
   display: flex;
@@ -308,8 +311,30 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+@media (min-width: 661px) {
+  .grid-for-why-pink__last-benefit-wrapper {
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.grid-for-why-pink__last-benefit-header {
+    width: 170px;
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__last-benefit-header {
+    width: 310px;
+  }
+}
 .grid-for-why-pink__last-benefit-container {
-  max-width: 295px;
+  max-width: 300px;
+}
+@media (min-width: 661px) {
+  .grid-for-why-pink__last-benefit-container {
+    max-width: 525px;
+    margin-top: 65px;
+    margin-left: 65px;
+  }
 }
 /*grid-for-photos-users*/
 .grid-for-photos-users {
@@ -334,12 +359,24 @@
     margin-bottom: 40px;
   }
 }
+@media (min-width: 321px) {
+  .grid-for-footer {
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+}
 .grid-for-footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
+}
+@media (min-width: 661px) {
+  .grid-for-footer-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .grid-for-footer__logo {
   padding-bottom: 45px;

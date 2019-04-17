@@ -15,18 +15,26 @@
 }
 .menu {
   display: flex;
+  width: 100%;
+  position: relative;
+  z-index: 1;
   justify-content: center;
   background-color: #283645;
 }
 @media (min-width: 661px) {
   .menu {
     min-height: 110px;
-    background-opacity: 0.3;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }
 .menu__head {
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+@media (min-width: 661px) {
+  .menu__head {
+    box-shadow: none;
+  }
 }
 .menu__logo {
   width: 75px;
@@ -72,6 +80,7 @@
     font-weight: 400;
     text-transform: capitalize;
     line-height: 18px;
+    box-shadow: none;
   }
 }
 .menu__list {
