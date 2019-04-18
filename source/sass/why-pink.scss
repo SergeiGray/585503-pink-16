@@ -117,10 +117,23 @@
   position: relative;
   width: 238px;
   height: 276px;
-  background: url(../img/icon-timer.svg);
-  background-size: 238px 276px;
+}
+@media (min-width: 661px) {
+  .why-pink__last-benefit-image {
+    width: 298px;
+    height: 345px;
+  }
+}
+@media (min-width: 661px) {
+  .why-pink__last-benefit-svg {
+    width: 298px;
+    height: 345px;
+  }
 }
 .why-pink__24hours {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: -40px;
   left: 19px;
@@ -133,7 +146,16 @@
   line-height: 149.47px;
   border-radius: 100%;
   border: 13px solid #d22856;
-  text-align: center;
+}
+@media (min-width: 661px) {
+  .why-pink__24hours {
+    top: -50px;
+    left: 22px;
+    width: 253px;
+    height: 253px;
+    font-size: 120px;
+    border-width: 18px;
+  }
 }
 .why-pink__last-benefit-link {
   color: #d22856;

@@ -5,6 +5,16 @@
   align-items: center;
 }
 /*wrapper*/
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+@media (min-width: 321px) {
+  .wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 661px) {
   .wrapper {
     width: 940px;
@@ -91,10 +101,45 @@
   flex-direction: column;
   align-items: center;
   margin-top: -67px;
+  &--index-page {
+    padding-top: 491px;
+  }
+  &--photo-page {
+    box-sizing: border-box;
+    padding-top: 100px;
+    min-height: 235px;
+  }
+  &--form-page {
+    box-sizing: border-box;
+    padding-top: 100px;
+    min-height: 235px;
+  }
+}
+@media (min-width: 321px) {
+  .grid-for-description {
+    &--index-page {
+      padding-top: 175px;
+      align-items: flex-start;
+    }
+    &--photo-page {
+      margin-top: -110px;
+      justify-content: center;
+      padding-top: 60px;
+    }
+    &--form-page {
+      margin-top: -110px;
+      justify-content: center;
+      padding-top: 60px;
+    }
+  }
 }
 @media (min-width: 661px) {
   .grid-for-description {
     margin-top: -110px;
+    &--index-page {
+      padding-top: 215px;
+      align-items: flex-start;
+    }
   }
 }
 .grid-for-description__download {
@@ -146,28 +191,11 @@
 }
 .grid-for-description__signature {
   width: 250px;
-  text-align: center;
-}
-.grid-for-description--index-page {
-  padding-top: 491px;
 }
 @media (min-width: 321px) {
-  .grid-for-description--index-page {
-    padding-top: 175px;
-    align-items: flex-start;
+  .grid-for-description__signature {
+    width: 400px;
   }
-}
-@media (min-width: 661px) {
-  .grid-for-description--index-page {
-    padding-top: 215px;
-    align-items: flex-start;
-  }
-}
-.grid-for-description--photo-page,
-.grid-for-description--form-page {
-  box-sizing: border-box;
-  padding-top: 100px;
-  min-height: 235px;
 }
 /*grid-for-why-pink*/
 .grid-for-why-pink {
@@ -214,7 +242,7 @@
 @media (min-width: 321px) {
   .grid-for-why-pink__benefits-list {
     width: 295px;
-    margin-right: 20px;
+    margin-right: 0;
   }
 }
 @media (min-width: 661px) {
@@ -290,7 +318,7 @@
 @media (min-width: 321px) {
   .grid-for-why-pink__benefits-image {
     margin-top: -80px;
-    margin-left: 20px;
+    margin-left: 0;
   }
 }
 @media (min-width: 661px) {
@@ -340,13 +368,56 @@
 .grid-for-photos-users {
   @include flex-column;
 }
-.grid-for-photos-users__wrapper {
-  width: 280px;
-}
 .grid-for-photos-users__item {
   @include flex-column;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+}
+@media (min-width: 321px) {
+  .grid-for-photos-users__item {
+    &--panorama {
+      margin: 0 0 50px 0;
+    }
+    &--in-container {
+      width: 300px;
+    }
+  }
+}
+.grid-for-photos-users__container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+@media (min-width: 321px) {
+  .grid-for-photos-users__container {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.grid-for-photos-users__custom-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 321px) {
+  .grid-for-photos-users__custom-data {
+     min-height: 155px;
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-photos-users__custom-data {
+    position: relative;
+    &--panorama {
+      min-height: auto;
+    }
+
+  }
+}
+@media (min-width: 661px) {
+  .grid-for-photos-users__likes {
+    position: absolute;
+    right: 0;
+  }
 }
 /*grid-for-footer*/
 .grid-for-footer {
@@ -359,7 +430,7 @@
     margin-bottom: 40px;
   }
 }
-@media (min-width: 321px) {
+@media (min-width: 661px) {
   .grid-for-footer {
     margin-top: 70px;
     margin-bottom: 75px;
@@ -367,10 +438,16 @@
 }
 .grid-for-footer-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
+  flex-direction: column;
+}
+@media (min-width: 321px) {
+  .grid-for-footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 @media (min-width: 661px) {
   .grid-for-footer-wrapper {
