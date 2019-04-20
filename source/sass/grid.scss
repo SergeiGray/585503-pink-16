@@ -1,21 +1,15 @@
-/*mixin*/
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 /*wrapper*/
 .wrapper {
   width: 280px;
   margin: 0 auto;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .wrapper {
     width: 620px;
     margin: 0 auto;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .wrapper {
     width: 940px;
     margin: 0 auto;
@@ -25,7 +19,7 @@
 .grid-for-menu {
   @include flex-column;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu {
     margin-right: 20px;
     margin-left: 20px;
@@ -38,7 +32,7 @@
   display: flex;
   justify-content: center;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu__head {
     width: auto;
     margin-right: 80px;
@@ -51,12 +45,12 @@
   min-height: 69px;
   width: 100%;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-menu__head-wrapper {
     width: 700px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu__head-wrapper {
     width: auto;
     min-height: auto;
@@ -69,7 +63,7 @@
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu__item {
     width: auto;
   }
@@ -77,7 +71,7 @@
 .grid-for-menu__container {
   display: flex;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu__container {
     flex-grow: 1;
     justify-content: flex-end;
@@ -87,7 +81,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-menu__list {
     max-width: 620px;
     flex-direction: row;
@@ -115,7 +109,7 @@
     min-height: 235px;
   }
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-description {
     &--index-page {
       padding-top: 175px;
@@ -133,7 +127,7 @@
     }
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-description {
     margin-top: -110px;
     &--index-page {
@@ -146,12 +140,12 @@
   @include flex-column;
     width: 280px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-description__download {
     margin-left: 20px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-description__download {
     margin-left: 0;
   }
@@ -168,7 +162,7 @@
   align-self: stretch;
   margin-bottom: 30px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-description__button {
     margin-bottom: 50px;
   }
@@ -179,7 +173,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-description__icons {
     margin-bottom: 40px;
   }
@@ -192,7 +186,7 @@
 .grid-for-description__signature {
   width: 250px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-description__signature {
     width: 400px;
   }
@@ -206,7 +200,7 @@
   padding-top: 45px;
   padding-bottom: 20px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__questions-list {
     padding-top: 65px;
     padding-bottom: 40px;
@@ -224,7 +218,7 @@
     max-width: 350px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__question {
     &--second-question {
       max-width: 450px;
@@ -239,13 +233,13 @@
   margin-top: 0;
   margin-bottom: 0;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-why-pink__benefits-list {
     width: 295px;
     margin-right: 0;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefits-list {
     width: 100%;
     box-sizing: border-box;
@@ -261,14 +255,14 @@
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-why-pink__benefits-list-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefits-list-wrapper {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -279,12 +273,12 @@
   @include flex-column;
   justify-content: center;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-why-pink__benefit {
     align-items: flex-start;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefit {
     max-width: 235px;
     align-items: center;
@@ -294,7 +288,7 @@
   margin-top: 0;
   margin-bottom: 12px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefit-header {
     max-width: 215px;
     margin-bottom: 25px;
@@ -307,7 +301,7 @@
     margin-bottom: 0;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefit-paragraph {
     margin-bottom: 0;
   }
@@ -315,13 +309,13 @@
 .grid-for-why-pink__benefits-image {
   margin-top: 0px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-why-pink__benefits-image {
     margin-top: -80px;
     margin-left: 0;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__benefits-image {
     margin-top: -80px;
     margin-left: 0;
@@ -339,7 +333,7 @@
   margin-left: 20px;
   margin-right: 20px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__last-benefit-wrapper {
     justify-content: flex-start;
     margin-left: auto;
@@ -349,7 +343,7 @@
 .grid-for-why-pink__last-benefit-header {
     width: 170px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__last-benefit-header {
     width: 310px;
   }
@@ -357,7 +351,7 @@
 .grid-for-why-pink__last-benefit-container {
   max-width: 300px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-why-pink__last-benefit-container {
     max-width: 525px;
     margin-top: 65px;
@@ -372,7 +366,7 @@
   @include flex-column;
   margin: 0 0 20px 0;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-photos-users__item {
     &--panorama {
       margin: 0 0 50px 0;
@@ -387,7 +381,7 @@
   flex-direction: column;
   align-items: stretch;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-photos-users__container {
     flex-direction: row;
     justify-content: space-between;
@@ -399,12 +393,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-photos-users__custom-data {
      min-height: 155px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-photos-users__custom-data {
     position: relative;
     &--panorama {
@@ -413,7 +407,7 @@
 
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-photos-users__likes {
     position: absolute;
     right: 0;
@@ -423,14 +417,14 @@
 .grid-for-footer {
   padding-top: 20px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-footer {
     padding-top: 0;
     margin-top: 35px;
     margin-bottom: 40px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-footer {
     margin-top: 70px;
     margin-bottom: 75px;
@@ -440,7 +434,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-footer-wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -449,7 +443,7 @@
     margin-right: 20px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .grid-for-footer-wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -458,7 +452,7 @@
 .grid-for-footer__logo {
   padding-bottom: 45px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-footer__logo {
     padding-bottom: 0;
   }
@@ -466,7 +460,7 @@
 .grid-for-footer__social {
   margin-bottom: 35px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .grid-for-footer__social {
     margin-bottom: 0;
   }

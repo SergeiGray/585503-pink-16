@@ -1,7 +1,3 @@
-@mixin background-image {
-  box-sizing: border-box;
-  background-color: #283645;
-}
 .description {
   &--index-page {
     min-height: 462px;
@@ -18,7 +14,7 @@
     @include background-image;
   }
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .description {
     &--index-page {
       min-height: 729px;
@@ -38,7 +34,7 @@
     }
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .description {
     &--index-page {
       min-height: 853px;
@@ -66,7 +62,7 @@
   color: #ffffff;
   margin: 0;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .description__signature {
     font-size: 50px;
   }

@@ -11,12 +11,12 @@
   font-size: 24px;
   font-weight: 300;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .why-pink__question {
     font-size: 40px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__question {
     font-size: 50px;
   }
@@ -26,12 +26,12 @@
   min-height: 90px;
   background: linear-gradient(175deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .why-pink__gradient-separator {
     background: linear-gradient(177deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__gradient-separator {
     background: linear-gradient(176deg, #fff 0px, #fff 100px, #f2f2f2 100px, #f2f2f2 200px);
   }
@@ -46,7 +46,7 @@
   line-height: 24px;
   text-align: center;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__benefit-header {
     font-size: 30px;
     line-height: 30px;
@@ -59,12 +59,12 @@
   font-weight: 400;
   text-align: center;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .why-pink__benefit-paragraph {
     text-align: left;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__benefit-paragraph {
     font-size: 18px;
     text-align: center;
@@ -75,14 +75,14 @@
   height: 320px;
   background: url(../img/iphone-screen-mobile@1x.png) no-repeat  center 45px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .why-pink__benefits-image {
     width: 268px;
     height: 481px;
     background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat  center top;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__benefits-image {
     width: 100%;
     height: 302px;
@@ -96,12 +96,12 @@
   color: #283645;
   background-color: #ffffff;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .why-pink__last-benefit {
     display: inline-block;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__last-benefit {
     background-color: #f2f2f2;
     font-size: 18px;
@@ -118,13 +118,13 @@
   width: 238px;
   height: 276px;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__last-benefit-image {
     width: 298px;
     height: 345px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__last-benefit-svg {
     width: 298px;
     height: 345px;
@@ -147,7 +147,7 @@
   border-radius: 100%;
   border: 13px solid #d22856;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .why-pink__24hours {
     top: -50px;
     left: 22px;

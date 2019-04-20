@@ -1,18 +1,3 @@
-@mixin list-reset {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-@mixin link-in-menu {
-  color: #ffffff;
-  text-decoration: none;
-  &:hover {
-    color: #d22856;
-  }
-  &:active {
-    opacity: 0.3;
-  }
-}
 .menu {
   display: flex;
   width: 100%;
@@ -21,7 +6,7 @@
   justify-content: center;
   background-color: #283645;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .menu {
     min-height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -31,7 +16,7 @@
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .menu__head {
     box-shadow: none;
   }
@@ -43,14 +28,14 @@
   background: url(../img/logo-pink-white-mobile.svg) no-repeat;
   @include link-in-menu;
 }
-@media (min-width: 321px){
+@media (min-width: $tablet-version){
   .menu__logo {
     width: 147px;
     height: 40px;
     background: url(../img/logo-pink-white-tablet.svg) no-repeat;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .menu__logo {
     margin-left: 0;
     background: url(../img/logo-pink-white-desktop.svg) no-repeat;
@@ -62,7 +47,7 @@
   margin-right: 20px;
   background: url(../img/icon-menu-cross.svg) no-repeat;
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .menu__menu-toggle {
     display: none;
   }
@@ -75,7 +60,7 @@
   border-bottom: 1px solid transparent;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .menu__item {
     font-weight: 400;
     text-transform: capitalize;

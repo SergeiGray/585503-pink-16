@@ -17,7 +17,7 @@
   margin-top: 45px;
   margin-bottom: 35px;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .photos-users__signature {
     width: 436px;
     font-size: 18px;
@@ -25,7 +25,7 @@
     margin-bottom: 80px;
   }
 }
-@media (min-width: 661px) {
+@media (min-width: $desktop-version) {
   .photos-users__signature {
     width: 570px;
   }
@@ -59,7 +59,7 @@
   height: 180px;
   background-size: 100% 100%;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .photos-users__image {
     width: 300px;
     height: 300px;
@@ -71,14 +71,14 @@
   background: url(../img/panorama-mobile@1x.jpg) no-repeat ;
   background-size: 100% 100%;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .photos-users__image--panorama {
     width: 700px;
     height: 509px;
     background: url(../img/panorama-tablet@1x.jpg) no-repeat ;
   }
 }
-@media (min-width: 321px) {
+@media (min-width: $desktop-version) {
   .photos-users__image--panorama {
     width: 1200px;
     height: 506px;
@@ -105,7 +105,7 @@
   background: url(../img/photo-wing-mobile@1x.jpg) no-repeat ;
 }
 /*Фотографии для tablet */
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .photos-users__image--first-post {
     background: url(../img/photo-car-tablet@1x.jpg) no-repeat ;
   }

@@ -11,7 +11,7 @@
   font-weight: 300;
   text-align: center;
 }
-@media (min-width: 321px) {
+@media (min-width: $tablet-version) {
   .download__slogan {
     display: inline-block;
   }
