@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 а">
   </head>
   <body>
     <header class="menu">
-      <div class="grid-for-menu">
+      <div class="grid-for-menu wrapper">
         <div class="menu__head grid-for-menu__head">
           <div class="grid-for-menu__head-wrapper">
             <a href="" class="menu__logo"></a>
@@ -15,8 +16,8 @@
             </div>
           </div>
         </div>
-        <nav class="menu__container">
-          <ul class="menu__list">
+        <nav class="menu__container grid-for-menu__container">
+          <ul class="menu__list grid-for-menu__list">
             <li class="menu__item grid-for-menu__item">
               <a href="index.html" class="menu__link">Главная</a>
             </li>
@@ -34,83 +35,104 @@
       </div>
     </header>
     <main>
-      <div class="wrapper">
-        <div class="description description--photo-page grid-for-description grid-for-description--photo-page">
-          <h2 class="description__signature grid-for-description__signature">Фотографии пользователей</h2>
+      <div class="description description--photo-page grid-for-description grid-for-description--photo-page">
+        <h2 class="description__signature grid-for-description__signature">Фотографии пользователей</h2>
+      </div>
+      <div class="photos-users grid-for-photos-users">
+        <div class="photos-users__signature grid-for-photos-users__signature">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </div>
-        <div class="photos-users grid-for-photos-users">
-          <div class="photos-users__signature grid-for-photos-users__signature">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+        <figure class="photos-users__item grid-for-photos-users__item grid-for-photos-users__item--panorama">
+          <div class="photos-users__image grid-for-photos-users__image photos-users__image--panorama">
           </div>
-          <figure class="photos-users__item grid-for-photos-users__item">
-            <div class="photos-users__image grid-for-photos-users__image photos-users__image--panorama"></div>
-            <figcaption class="photos-users__custom-data grid-for-photos-users__wrapper grid-for-photos-users__custom-data">
-              <p class="photos-users__user-name grid-for-photos-users__user-name">Анна <span class="photos-users__time-of-publication">(5 минут назад)</span></p>
-              <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </blockquote>
-              <p class="photos-users__likes">Нравится: 215</p>
+          <div class="wrapper">
+            <figcaption class="photos-users__custom-data wrapper grid-for-photos-users__custom-data grid-for-photos-users__custom-data--panorama">
+              <div>
+                <p class="photos-users__user-name grid-for-photos-users__user-name">Анна <span class="photos-users__time-of-publication">(5 минут назад)</span></p>
+                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+                </blockquote>
+            </div>
+              <p class="photos-users__likes grid-for-photos-users__likes">Нравится: 215</p>
             </figcaption>
-          </figure>
-          <div class="grid-for-photos-users__wrapper">
-            <figure class="photos-users__item grid-for-photos-users__item">
-              <div class="photos-users__image grid-for-photos-users__image photos-users__image--first-post"></div>
-              <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
+          </div>
+        </figure>
+        <div class="grid-for-photos-users__container wrapper">
+          <figure class="photos-users__item grid-for-photos-users__item
+          grid-for-photos-users__item--in-container">
+            <div class="photos-users__image grid-for-photos-users__image photos-users__image--first-post"></div>
+            <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
+              <div>
                 <p class="photos-users__user-name grid-for-photos-users__user-name">Левон <span class="photos-users__time-of-publication">(5 часов назад)</span></p>
                 <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Вчера он на луну летал, сегодня в руки к нам попал.
-                 </blockquote>
-                 <p class="photos-users__likes">Нравится: 356</p>
+                </blockquote>
+            </div>
+              <p class="photos-users__likes">Нравится: 356</p>
               </figcaption>
             </figure>
-            <figure class="photos-users__item grid-for-photos-users__item">
+            <figure class="photos-users__item grid-for-photos-users__item
+            grid-for-photos-users__item--in-container">
               <div class="photos-users__image grid-for-photos-users__image photos-users__image--second-post"></div>
               <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
-                <p class="photos-users__user-name grid-for-photos-users__user-name">Антон <span class="photos-users__time-of-publication">(12 часов назад)</span></p>
-                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Соседи будут рады!
-                </blockquote>
+                <div>
+                  <p class="photos-users__user-name grid-for-photos-users__user-name">Антон <span class="photos-users__time-of-publication">(12 часов назад)</span></p>
+                  <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Соседи будут рады!
+                  </blockquote>
+              </div>
                 <p class="photos-users__likes">Нравится: 666</p>
               </figcaption>
             </figure>
-            <figure class="photos-users__item grid-for-photos-users__item">
+            <figure class="photos-users__item grid-for-photos-users__item
+            grid-for-photos-users__item--in-container">
               <div class="photos-users__image grid-for-photos-users__image photos-users__image--third-post"></div>
               <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
-                <p class="photos-users__user-name grid-for-photos-users__user-name">Борис <span class="photos-users__time-of-publication">(20 часов назад)</span></p>
-                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Здесь могла быть ваша цитата о высоком и вечном.
-                </blockquote>
+                <div>
+                  <p class="photos-users__user-name grid-for-photos-users__user-name">Борис <span class="photos-users__time-of-publication">(20 часов назад)</span></p>
+                  <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Здесь могла быть ваша цитата о высоком и вечном.
+                  </blockquote>
+              </div>
                 <p class="photos-users__likes">Нравится: 215</p>
               </figcaption>
             </figure>
-            <figure class="photos-users__item grid-for-photos-users__item">
+            <figure class="photos-users__item grid-for-photos-users__item
+            grid-for-photos-users__item--in-container">
               <div class="photos-users__image grid-for-photos-users__image photos-users__image--fourth-post"></div>
               <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
-                <p class="photos-users__user-name grid-for-photos-users__user-name">Сергей <span class="photos-users__time-of-publication">(25 часов назад)</span></p>
-                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Самая кубанская в мире!
-                </blockquote>
+                <div>
+                  <p class="photos-users__user-name grid-for-photos-users__user-name">Сергей <span class="photos-users__time-of-publication">(25 часов назад)</span></p>
+                  <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Самая кубанская в мире!
+                  </blockquote>
+              </div>
                 <p class="photos-users__likes">Нравится: 4</p>
               </figcaption>
             </figure>
-            <figure class="photos-users__item grid-for-photos-users__item">
+            <figure class="photos-users__item grid-for-photos-users__item
+            grid-for-photos-users__item--in-container">
               <div class="photos-users__image grid-for-photos-users__image photos-users__image--fifth-post"></div>
               <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
-                <p class="photos-users__user-name grid-for-photos-users__user-name">Максим <span class="photos-users__time-of-publication">(40 часов назад)</span></p>
-                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Где снег-то?
-                </blockquote>
+                <div>
+                  <p class="photos-users__user-name grid-for-photos-users__user-name">Максим <span class="photos-users__time-of-publication">(40 часов назад)</span></p>
+                  <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Где снег-то?
+                  </blockquote>
+              </div>
                 <p class="photos-users__likes">Нравится: 150</p>
               </figcaption>
             </figure>
-            <figure class="photos-users__item grid-for-photos-users__item">
+            <figure class="photos-users__item grid-for-photos-users__item
+            grid-for-photos-users__item--in-container">
               <div class="photos-users__image grid-for-photos-users__image photos-users__image--sixth-post"></div>
               <figcaption class="photos-users__custom-data grid-for-photos-users__custom-data">
-                <p class="photos-users__user-name grid-for-photos-users__user-name">Надежда <span class="photos-users__time-of-publication">(45 часов назад)</span></p>
-                <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Всем GM и взаимные лайки!
-                </blockquote>
-                <p class="photos-users__likes grid-for-photos-users__likes">Нравится: 2560</p>
+                <div>
+                  <p class="photos-users__user-name grid-for-photos-users__user-name">Надежда <span class="photos-users__time-of-publication">(45 часов назад)</span></p>
+                  <blockquote class="photos-users__user-comment grid-for-photos-users__user-comment"> Всем GM и взаимные лайки!
+                  </blockquote>
+              </div>
+                <p class="photos-users__likes">Нравится: 2560</p>
               </figcaption>
             </figure>
           </div>
-        </div>
       </div>
     </main>
     <footer class="footer grid-for-footer">
-      <div class="wrapper">
+      <div class="grid-for-footer-wrapper wrapper">
         <div class="footer__logo grid-for-footer__logo">
         </div>
         <div class="social grid-for-footer__social">

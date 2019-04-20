@@ -1,0 +1,18 @@
+.download {
+  display: flex;
+  flex-direction: column;
+}
+.download__slogan {
+  display: none;
+  width: 186px;
+  margin: 0;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+@media (min-width: $tablet-version) {
+  .download__slogan {
+    display: inline-block;
+  }
+}

@@ -1,13 +1,16 @@
+@import "variables.scss";
+@import "mixins.scss";
 @import "scaffolding.scss";
 @import "fonts.scss";
-@import "button.scss";
 @import "grid.scss";
-@import "description.scss";
-@import "developed.scss";
-@import "download.scss";
-@import "footer.scss";
-@import "menu.scss";
-@import "photos-users.scss";
-@import "platform.scss";
-@import "social.scss";
-@import "why-pink.scss";
+/*blocks*/
+@import "blocks/button.scss";
+@import "blocks/description.scss";
+@import "blocks/developed.scss";
+@import "blocks/download.scss";
+@import "blocks/footer.scss";
+@import "blocks/menu.scss";
+@import "blocks/photos-users.scss";
+@import "blocks/platform.scss";
+@import "blocks/social.scss";
+@import "blocks/why-pink.scss";
