@@ -1,6 +1,6 @@
 /*wrapper*/
 .wrapper {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 @media (min-width: $tablet-version) {
@@ -139,6 +139,7 @@
 .grid-for-description__download {
   @include flex-column;
     width: 280px;
+    margin: 0 auto;
 }
 @media (min-width: $tablet-version) {
   .grid-for-description__download {
