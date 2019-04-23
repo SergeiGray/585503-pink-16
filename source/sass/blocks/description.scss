@@ -58,6 +58,7 @@
 .description__signature {
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
   margin: 0;
@@ -65,5 +66,9 @@
 @media (min-width: $tablet-version) {
   .description__signature {
     font-size: 50px;
+    line-height: 60px;
+    &--form-page {
+      letter-spacing: -1px;
+    }
   }
 }

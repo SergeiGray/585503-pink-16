@@ -99,13 +99,13 @@
   }
   &--photo-page {
     box-sizing: border-box;
-    padding-top: 100px;
-    min-height: 235px;
+    padding-top: 94px;
+    min-height: 237px;
   }
   &--form-page {
     box-sizing: border-box;
-    padding-top: 100px;
-    min-height: 235px;
+    padding-top: 94px;
+    min-height: 237px;
   }
 }
 @media (min-width: $tablet-version) {
@@ -117,12 +117,12 @@
       align-items: flex-start;
     }
     &--photo-page {
-      padding-top: 60px;
+      padding-top: 37px;
       margin-top: -110px;
       justify-content: center;
     }
     &--form-page {
-      padding-top: 60px;
+      padding-top: 97px;
       margin-top: -110px;
       justify-content: center;
     }
@@ -135,6 +135,12 @@
       padding-top: 215px;
       margin-bottom: 0;
       align-items: flex-start;
+    }
+    &--photo-page {
+      padding-top: 70px;
+    }
+    &--form-page {
+      padding-top: 70px;
     }
   }
 }
@@ -222,6 +228,16 @@
 @media (min-width: $tablet-version) {
   .grid-for-description__signature {
     width: 400px;
+    &--form-page {
+      width: 500px;
+    }
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-description__signature {
+    &--form-page {
+      width: 800px;
+    }
   }
 }
 /*grid-for-why-pink*/
@@ -408,7 +424,7 @@
 }
 .grid-for-photos-users__item {
   @include flex-column;
-  margin: 0 0 20px 0;
+  margin: 0 0 21px 0;
 }
 @media (min-width: $tablet-version) {
   .grid-for-photos-users__item {
@@ -418,6 +434,28 @@
     &--in-container {
       width: 300px;
     }
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-photos-users__item {
+    &--in-container {
+      margin: 0 0 53px 0;
+    }
+  }
+}
+.grid-for-photos-users__signature {
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-photos-users__signature {
+    margin-top: 92px;
+    margin-bottom: 76px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-photos-users__signature {
+    margin-bottom: 88px;
   }
 }
 .grid-for-photos-users__container {
@@ -439,22 +477,26 @@
 }
 @media (min-width: $tablet-version) {
   .grid-for-photos-users__custom-data {
-     min-height: 155px;
+    min-height: 155px;
+    &--panorama {
+      position: relative;
+      min-height: 120px;
+    }
   }
 }
 @media (min-width: $desktop-version) {
   .grid-for-photos-users__custom-data {
-    position: relative;
     &--panorama {
-      min-height: auto;
+      min-height: 96px;
     }
-
   }
 }
-@media (min-width: $desktop-version) {
+@media (min-width: $tablet-version) {
   .grid-for-photos-users__likes {
-    position: absolute;
-    right: 0;
+    &--panorama{
+      position: absolute;
+      right: 0;
+    }
   }
 }
 /*grid-for-footer*/
