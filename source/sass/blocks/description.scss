@@ -38,7 +38,7 @@
   .description {
     &--index-page {
       min-height: 853px;
-      background: url(../img/iphone-hand-desktop@1x.png) no-repeat bottom center,
+      background: url(../img/iphone-hand-desktop@1x.png) no-repeat bottom right,
       url(../img/bg-back-desktop@1x.jpg) no-repeat center top;
     }
     &--form-page {
@@ -58,6 +58,7 @@
 .description__signature {
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
   text-align: center;
   color: #ffffff;
   margin: 0;
@@ -65,5 +66,9 @@
 @media (min-width: $tablet-version) {
   .description__signature {
     font-size: 50px;
+    line-height: 60px;
+    &--form-page {
+      letter-spacing: -1px;
+    }
   }
 }

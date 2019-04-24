@@ -32,6 +32,8 @@
   .menu__logo {
     width: 147px;
     height: 40px;
+    margin-left: 0;
+    padding-bottom: 20px;
     background: url(../img/logo-pink-white-tablet.svg) no-repeat;
   }
 }
@@ -46,6 +48,11 @@
   height: 23px;
   margin-right: 20px;
   background: url(../img/icon-menu-cross.svg) no-repeat;
+}
+@media (min-width: $tablet-version){
+  .menu__menu-toggle {
+    margin-right: 0;
+  }
 }
 @media (min-width: $desktop-version) {
   .menu__menu-toggle {

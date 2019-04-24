@@ -14,5 +14,15 @@
 @media (min-width: $tablet-version) {
   .download__slogan {
     display: inline-block;
+    line-height: 49px;
+    letter-spacing: -1px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .download__slogan {
+    width: 300px;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
   }
 }
