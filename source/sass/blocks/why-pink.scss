@@ -80,22 +80,42 @@
 .why-pink__benefits-image {
   width: 157px;
   height: 320px;
-  background: url(../img/iphone-screen-mobile@1x.png) no-repeat  center 45px;
+  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+    background-image: url(../img/iphone-screen-mobile@2x.png);
+    background-size: 157px auto;
+  }
 }
 @media (min-width: $tablet-version) {
   .why-pink__benefits-image {
     width: 268px;
     height: 481px;
-    background: url(../img/iphone-screen-3-tablet@1x.png) no-repeat  center top;
+    background-image: url(../img/iphone-screen-3-tablet@1x.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+      background-size: 268px auto;
+    }
   }
 }
 @media (min-width: $desktop-version) {
   .why-pink__benefits-image {
     width: 100%;
     height: 302px;
-    background: url(../img/iphone-screen-1-desktop@1x.png) no-repeat  left top,
-                url(../img/iphone-screen-2-desktop@1x.png) no-repeat  center top,
-                url(../img/iphone-screen-3-desktop@1x.png) no-repeat  right top;
+    background-image: url(../img/iphone-screen-1-desktop@1x.png),
+                url(../img/iphone-screen-2-desktop@1x.png),
+                url(../img/iphone-screen-3-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: left top, center top, right top;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
+      background-image: url(../img/iphone-screen-1-desktop@2x.png),
+                url(../img/iphone-screen-2-desktop@2x.png),
+                url(../img/iphone-screen-3-desktop@2x.png);
+      background-size: 292px auto;
+    }
   }
 }
 .why-pink__last-benefit {
