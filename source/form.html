@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="menu">
@@ -39,8 +40,98 @@
         <h2 class="description__signature description__signature--form-page
         grid-for-description__signature grid-for-description__signature--form-page">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
-      <div class="wrapper">
-      </div>
+        <form action="" class="form grid-for-form wrapper">
+          <div class="form__head grid-for-form__head">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__head-last-line">Пожалуйста, заполните форму ниже:</span>
+          </div>
+          <div class="form__blocks grid-for-form__blocks">
+            <fieldset class="form__user-initials grid-for-form__user-initials">
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Фамилия:</span>
+                <input type="text" placeholder="Укажите фамилию *" class="form__input-text form__input-text--user-initials">
+              </label>
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Имя:</span>
+                <input type="text" placeholder="Введите ваше имя *" class="form__input-text form__input-text--user-initials">
+              </label>
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Отчество:</span>
+                <input type="text" placeholder="Ну и отчество тоже" class="form__input-text form__input-text--user-initials">
+              </label>
+            </fieldset>
+            <fieldset class="form__achievement grid-for-form__achievement">
+              <legend class="form__legend form__legend--achievement">Ваши безбашенные <span class="form__achievement-new-line">достижения в путешествии</span></legend>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-one" type="checkbox" name="achievement" value="check-1" class="form__achievement-input">
+                <label for="form__achievement-input-one" class="form__achievement-label">Сделал селфи с акулой</label>
+              </div>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-two" type="checkbox" name="achievement" value="check-2" class="form__achievement-input">
+                <label for="form__achievement-input-two" class="form__achievement-label">Обгорел на пляже
+                </label>
+              </div>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-three" type="checkbox" name="achievement" value="check-3" class="form__achievement-input">
+                <label for="form__achievement-input-three" class="form__achievement-label">Видел Чака Норриса
+                </label>
+              </div>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-four" type="checkbox" name="achievement" value="check-4" class="form__achievement-input">
+                <label for="form__achievement-input-four" class="form__achievement-label">Накупил сувениров
+                </label>
+              </div>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-five" type="checkbox" name="achievement" value="check-5" class="form__achievement-input">
+                <label for="form__achievement-input-five" class="form__achievement-label">Удержал башню
+                </label>
+              </div>
+              <div class="form__achievement-container">
+                <input id="form__achievement-input-six" type="checkbox" name="achievement" value="check-6" class="form__achievement-input">
+                <label for="form__achievement-input-six" class="form__achievement-label">Разгромил отель
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__contacts grid-for-form__contacts">
+              <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+              <label class="form__label-text form__label-text--contacts"><span class="form__title form__title--contacts">Номер телефона</span>
+                <input type="text" placeholder="Номер, пожалуйста" class="form__input-text">
+              </label>
+              <label class="form__label-text form__label-text--contacts"><span class="form__title  form__title--contacts">Адрес почты</span>
+                <input type="text" placeholder="Введите почту *" class="form__input-text">
+              </label>
+            </fieldset>
+            <fieldset class="form__what-application  grid-for-form__what-application">
+              <legend class="form__legend form__legend--what-application">С каким приложением путешествовали?</legend>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-one" type="radio" name="what-application" value="check-1" class="form__what-application-input">
+                <label for="form__what-application-input-one" class="form__what-application-label">Pink для iOS
+                </label>
+              </div>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-two" type="radio" name="what-application" value="check-2" class="form__what-application-input">
+                <label for="form__what-application-input-two" class="form__what-application-label">Pink на Android
+                </label>
+              </div>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-three" type="radio" name="what-application" value="check-3" class="form__what-application-input">
+                <label for="form__what-application-input-three" class="form__what-application-label">Windows Phone
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__emotions grid-for-form__emotions">
+              <legend class="form__legend form__legend--emotions">Опишите свои эмоции</legend>
+              <textarea name="emotions" id="form__emotions-text" rows="6" class="form__emotions-text">
+                Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </fieldset>
+            <div class="form__sending grid-for-form__sending">
+              <input type="submit" value="Отправить форму" class="form__sending-button">
+              <p class="form__footnote">
+                <span class="form__footnote-star">*</span> — обязательные<span class="form__footnote form__footnote--desktop"> для заполнения</span> поля
+              </p>
+            </div>
+          </div>
+        </form>
     </main>
     <footer class="footer grid-for-footer">
       <div class="grid-for-footer-wrapper wrapper">
