@@ -64,20 +64,32 @@
 .form__achievement {
   @include flex-column;
   background-color: #f2f2f2;
-  padding: 0 0 14px 0;
   border: none;
+  padding: 0;
 }
 @media (min-width: $tablet-version) {
   .form__achievement {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding: 29px 39px 20px 39px;
   }
 }
 @media (min-width: $desktop-version) {
   .form__achievement {
     width: 100%;
-    height: 188px;
+  }
+}
+.form__achievement-containers {
+  @include flex-column;
+  padding: 0 0 14px 0;
+}
+@media (min-width: $tablet-version) {
+  .form__achievement-containers {
+    padding: 29px 39px 20px 39px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__achievement-containers {
+    height: 171px;
     flex-wrap: wrap;
   }
 }
@@ -98,6 +110,16 @@
     width: 100%;
     padding-top: 21px;
     padding-bottom: 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.form__contacts-container {
+  @include flex-column;
+  width: 100%;
+}
+@media (min-width: $desktop-version) {
+  .form__contacts-container {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -219,8 +241,11 @@
   .form__label-text {
     margin-bottom: 49px;
     &--contacts {
+      display: inline-flex;
       width: 373px;
       margin-bottom: 19px;
+      margin-right: 0;
+      margin-left: 0;
     }
   }
 }
@@ -373,7 +398,7 @@
     &--four,
     &--five,
     &--six {
-      padding-left: 15px;
+      margin-left: 15px
     }
   }
 }
@@ -454,6 +479,7 @@
 .form__emotions-text {
   box-sizing: border-box;
   min-height: 201px;
+  width: 100%;
   padding-top: 14px;
   padding-left: 19px;
   color: #283645;
