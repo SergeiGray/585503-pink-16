@@ -255,7 +255,7 @@
     &:after {
       content: '';
       position: absolute;
-      top: 12px;
+      top: 14px;
       right: 0;
       width: 60px;
       height: 60px;
@@ -270,7 +270,7 @@
     &:after {
       content: '';
       position: absolute;
-      top: 12px;
+      top: 14px;
       right: 0;
       width: 60px;
       height: 60px;
@@ -283,6 +283,7 @@
 }
 .form__input-text {
   border: 2px solid #e5e5e5;
+  font-family: "Open Sans";
   font-size: 18px;
   letter-spacing: 1px;
   word-spacing: -4px;
@@ -488,6 +489,9 @@
   line-height: 29px;
   resize: none;
   border: 2px solid #e5e5e5;
+  &::placeholder {
+    opacity: 1;
+  }
 }
 @media (min-width: $tablet-version) {
   .form__emotions-text {

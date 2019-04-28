@@ -47,7 +47,9 @@
   width: 24px;
   height: 23px;
   margin-right: 20px;
-  background: url(../img/icon-menu-cross.svg) no-repeat;
+  background-image: url(../img/icon-menu-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 @media (min-width: $tablet-version){
   .menu__menu-toggle {
@@ -80,4 +82,16 @@
 }
 .menu__link {
   @include link-in-menu;
+}
+.menu__script-on {
+  display: none;
+  &--menu {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &--menu-head {
+    box-shadow: none;
+  }
+  &--menu-toggle {
+    background-image: url(../img/icon-menu-burger.svg);
+  }
 }
