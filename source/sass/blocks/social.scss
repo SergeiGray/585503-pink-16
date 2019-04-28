@@ -7,6 +7,11 @@
     margin-left: -15px;
   }
 }
+@media (min-width: $desktop-version) {
+  .social {
+    margin-left: 15px;
+  }
+}
 .social__twitter {
   @include social-icon-size;
 }

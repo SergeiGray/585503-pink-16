@@ -506,6 +506,17 @@
     }
   }
 }
+/*grid-for-main*/
+@media (min-width: $tablet-version) {
+  .grid-for-main{
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-main{
+    margin-bottom: 0;
+  }
+}
 /*grid-for-footer*/
 .grid-for-footer {
   padding-top: 20px;
@@ -518,7 +529,7 @@
 }
 @media (min-width: $desktop-version) {
   .grid-for-footer {
-    margin-top: 70px;
+    margin-top: 65px;
     margin-bottom: 75px;
   }
 }
@@ -576,6 +587,11 @@
     margin-bottom: 60px;
   }
 }
+@media (min-width: $desktop-version) {
+  .grid-for-form__head {
+    margin-bottom: 70px;
+  }
+}
 .grid-for-form__user-initials {
   margin-left: 20px;
   margin-right: 20px;
@@ -597,7 +613,7 @@
   .grid-for-form__emotions {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 }
 .grid-for-form__sending {
@@ -606,9 +622,7 @@
 }
 @media (min-width: $tablet-version) {
   .grid-for-form__sending {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 51px;
+    margin: 0;
   }
 }
 .grid-for-form__what-application {

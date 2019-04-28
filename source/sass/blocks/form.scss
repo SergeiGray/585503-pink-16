@@ -77,6 +77,8 @@
 @media (min-width: $desktop-version) {
   .form__achievement {
     width: 100%;
+    height: 188px;
+    flex-wrap: wrap;
   }
 }
 .form__contacts {
@@ -94,6 +96,8 @@
 @media (min-width: $desktop-version) {
   .form__contacts {
     width: 100%;
+    padding-top: 21px;
+    padding-bottom: 0px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -109,7 +113,13 @@
     order: -2;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
-    padding: 9px 40px 38px 40px;
+    padding: 9px 0 38px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__what-application {
+    width: 431px;
+    padding-top: 29px;
   }
 }
 .form__emotions {
@@ -121,12 +131,13 @@
   .form__emotions {
     border: 2px solid #e5e5e5;
     box-sizing: border-box;
-    padding: 36px 58px 51px;
+    padding: 35px 58px 51px;
   }
 }
 @media (min-width: $desktop-version) {
   .form__emotions {
     width: 100%;
+    padding: 33px 58px 41px;
   }
 }
 .form__sending {
@@ -165,13 +176,20 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 39px;
-  &--desktop {
+  &--hidden-text {
     display: none;
   }
 }
 @media (min-width: $tablet-version) {
   .form__footnote {
     margin: 0;
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__footnote {
+    &--hidden-text {
+      display: inline;
+    }
   }
 }
 .form__footnote-star {
@@ -197,6 +215,47 @@
     }
   }
 }
+@media (min-width: $desktop-version) {
+  .form__label-text {
+    margin-bottom: 49px;
+    &--contacts {
+      width: 373px;
+      margin-bottom: 19px;
+    }
+  }
+}
+@media (min-width: $tablet-version) {
+  .form__label-phone {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url(../img/icon-phone.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+  .form__label-mail {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 12px;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      background-color: #e5e5e5;
+      background-image: url(../img/icon-mail.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
 .form__input-text {
   border: 2px solid #e5e5e5;
   font-size: 18px;
@@ -215,6 +274,15 @@
       margin-left: 17px;
       padding: 18px 21px;
       flex-grow: 1;
+    }
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__input-text {
+    &--user-initials {
+      box-sizing: border-box;
+      width: 340px;
+      margin-top: 5px;
     }
   }
 }
@@ -260,8 +328,8 @@
   .form__legend {
     width: auto;
     margin: 0 auto;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     &--achievement {
       background-color: #ffffff;
       padding-top:0;
@@ -299,6 +367,16 @@
 .form__achievement-container {
   display: flex;
 }
+@media (min-width: $desktop-version) {
+  .form__achievement-container {
+    &--three,
+    &--four,
+    &--five,
+    &--six {
+      padding-left: 15px;
+    }
+  }
+}
 .form__achievement-input {
   display: none;
 }
@@ -334,6 +412,16 @@
 .form__what-application-container {
   display: flex;
 }
+@media (min-width: $tablet-version) {
+  .form__what-application-container {
+    margin-left: 40px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__what-application-container {
+    margin-left: 55px;
+  }
+}
 .form__what-application-input {
   display: none;
 }
@@ -368,7 +456,6 @@
   min-height: 201px;
   padding-top: 14px;
   padding-left: 19px;
-  text-indent: -80px;
   color: #283645;
   font-family: "Open Sans";
   font-size: 18px;
@@ -379,5 +466,11 @@
 @media (min-width: $tablet-version) {
   .form__emotions-text {
     min-height: 193px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .form__emotions-text {
+    min-height: 128px;
+    padding-top: 13px;
   }
 }
