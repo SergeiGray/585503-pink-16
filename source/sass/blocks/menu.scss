@@ -47,7 +47,6 @@
   width: 24px;
   height: 23px;
   margin-right: 20px;
-  background-image: url(../img/icon-menu-cross.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -91,8 +90,8 @@
   &--menu-head {
     box-shadow: none;
   }
-  &--menu-toggle {
-    background-image: url(../img/icon-menu-burger.svg);
+  &--menu-toggle-off {
+    display: none;
   }
 }
 @media (min-width: $desktop-version) {

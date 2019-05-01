@@ -114,6 +114,7 @@
   }
 }
 .description__signature {
+  width: 250px;
   font-size: 24px;
   font-weight: 300;
   line-height: 30px;
@@ -123,10 +124,19 @@
 }
 @media (min-width: $tablet-version) {
   .description__signature {
+    width: 400px;
     font-size: 50px;
     line-height: 60px;
     &--form-page {
+      width: 500px;
       letter-spacing: -1px;
+    }
+  }
+}
+@media (min-width: $desktop-version) {
+  .description__signature {
+    &--form-page {
+      width: 800px;
     }
   }
 }
