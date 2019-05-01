@@ -23,3 +23,15 @@
 .social__youtube {
   @include social-icon-size;
 }
+.social__twitter-svg {
+  width: 17px;
+  height: 15px;
+}
+.social__facebook-svg {
+  width: 9px;
+  height: 19px;
+}
+.social__youtube-svg {
+  width: 15px;
+  height:14px;
+}
