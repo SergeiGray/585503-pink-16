@@ -1,3 +1,4 @@
+
 .footer__logo {
     margin: auto;
     width: 147px;
@@ -6,7 +7,8 @@
   }
 @media (min-width: $tablet-version) {
   .footer__logo {
-    margin: 0;
+    margin: 5px 0;
+    align-self: flex-start;
   }
 }
 .footer--index-page {
@@ -17,5 +19,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 70px;
   }
 }

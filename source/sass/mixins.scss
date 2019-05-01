@@ -1,7 +1,6 @@
 @mixin flex-column {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 @mixin background-image {
   box-sizing: border-box;
