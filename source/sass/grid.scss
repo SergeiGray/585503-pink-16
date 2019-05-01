@@ -18,6 +18,7 @@
 /*grid-for-menu*/
 .grid-for-menu {
   @include flex-column;
+  align-items: center;
 }
 @media (min-width: $desktop-version) {
   .grid-for-menu {
@@ -146,6 +147,7 @@
 }
 .grid-for-description__download {
   @include flex-column;
+  align-items: center;
     width: 280px;
     margin: 0 auto;
 }
@@ -243,6 +245,7 @@
 /*grid-for-why-pink*/
 .grid-for-why-pink {
   @include flex-column;
+  align-items: center;
   justify-content: center;
 }
 .grid-for-why-pink__questions-list {
@@ -286,6 +289,7 @@
 }
 .grid-for-why-pink__benefits-list {
   @include flex-column;
+  align-items: center;
   justify-content: center;
   width: 255px;
   padding: 12px 0 0 0;
@@ -331,6 +335,7 @@
 }
 .grid-for-why-pink__benefit {
   @include flex-column;
+  align-items: center;
   justify-content: center;
   margin-bottom: 31px;
   &:last-child {
@@ -421,9 +426,11 @@
 /*grid-for-photos-users*/
 .grid-for-photos-users {
   @include flex-column;
+  align-items: center;
 }
 .grid-for-photos-users__item {
   @include flex-column;
+  align-items: center;
   margin: 0 0 21px 0;
 }
 @media (min-width: $tablet-version) {
@@ -499,6 +506,17 @@
     }
   }
 }
+/*grid-for-main*/
+@media (min-width: $tablet-version) {
+  .grid-for-main{
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-main{
+    margin-bottom: 0;
+  }
+}
 /*grid-for-footer*/
 .grid-for-footer {
   padding-top: 20px;
@@ -506,13 +524,12 @@
 @media (min-width: $tablet-version) {
   .grid-for-footer {
     padding-top: 0;
-    margin-top: 35px;
     margin-bottom: 40px;
   }
 }
 @media (min-width: $desktop-version) {
   .grid-for-footer {
-    margin-top: 70px;
+    margin-top: 65px;
     margin-bottom: 75px;
   }
 }
@@ -536,7 +553,7 @@
   }
 }
 .grid-for-footer__logo {
-  padding-bottom: 45px;
+  padding-bottom: 39px;
 }
 @media (min-width: $tablet-version) {
   .grid-for-footer__logo {
@@ -549,5 +566,86 @@
 @media (min-width: $tablet-version) {
   .grid-for-footer__social {
     margin-bottom: 0;
+  }
+}
+/*grid-for-form*/
+.grid-for-form {
+  padding-top: 45px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form {
+    padding-top: 91px;
+  }
+}
+.grid-for-form__head {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__head {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: $desktop-version) {
+  .grid-for-form__head {
+    margin-bottom: 70px;
+  }
+}
+.grid-for-form__user-initials {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__user-initials {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+.grid-for-form__emotions {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 46px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__emotions {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 66px;
+  }
+}
+.grid-for-form__sending {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__sending {
+    margin: 0;
+  }
+}
+.grid-for-form__what-application {
+  margin: 0;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__what-application {
+    margin-bottom: 56px;
+  }
+}
+.grid-for-form__contacts {
+  margin: 0 20px;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__contacts {
+    margin: 0 0 56px;
+  }
+}
+.grid-for-form__achievement {
+  margin: 0;
+}
+@media (min-width: $tablet-version) {
+  .grid-for-form__achievement {
+    margin-bottom: 56px;
   }
 }

@@ -5,6 +5,7 @@
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/picturefill.min.js"></script>
   </head>
   <body>
     <header class="menu">
@@ -34,13 +35,105 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="grid-for-main">
       <div class="description description--form-page grid-for-description grid-for-description--form-page">
         <h2 class="description__signature description__signature--form-page
         grid-for-description__signature grid-for-description__signature--form-page">Конкурс на самое безбашенное путешествие с Пинк</h2>
       </div>
-      <div class="wrapper">
-      </div>
+        <form action="" class="form grid-for-form wrapper">
+          <div class="form__head grid-for-form__head">
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__head-last-line">Пожалуйста, заполните форму ниже:</span>
+          </div>
+          <div class="form__blocks grid-for-form__blocks">
+            <fieldset class="form__user-initials grid-for-form__user-initials">
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Фамилия:</span>
+                <input type="text" placeholder="Укажите фамилию *" class="form__input-text form__input-text--user-initials">
+              </label>
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Имя:</span>
+                <input type="text" placeholder="Введите ваше имя *" class="form__input-text form__input-text--user-initials">
+              </label>
+              <label class="form__label-text form__label-text--user-initials">
+                <span class="form__title">Отчество:</span>
+                <input type="text" placeholder="Ну и отчество тоже" class="form__input-text form__input-text--user-initials">
+              </label>
+            </fieldset>
+            <fieldset class="form__achievement grid-for-form__achievement">
+              <legend class="form__legend form__legend--achievement">Ваши безбашенные <span class="form__achievement-new-line">достижения в путешествии</span></legend>
+              <div class="form__achievement-containers">
+                <div class="form__achievement-container form__achievement-container--one">
+                  <input id="form__achievement-input-one" type="checkbox" name="achievement" value="check-1" class="form__achievement-input">
+                  <label for="form__achievement-input-one" class="form__achievement-label">Сделал селфи с акулой</label>
+                </div>
+                <div class="form__achievement-container form__achievement-container--two">
+                  <input id="form__achievement-input-two" type="checkbox" name="achievement" value="check-2" class="form__achievement-input">
+                  <label for="form__achievement-input-two" class="form__achievement-label">Обгорел на пляже
+                  </label>
+                </div>
+                <div class="form__achievement-container form__achievement-container--three">
+                  <input id="form__achievement-input-three" type="checkbox" name="achievement" value="check-3" class="form__achievement-input">
+                  <label for="form__achievement-input-three" class="form__achievement-label">Видел Чака Норриса
+                  </label>
+                </div>
+                <div class="form__achievement-container form__achievement-container--four">
+                  <input id="form__achievement-input-four" type="checkbox" name="achievement" value="check-4" class="form__achievement-input">
+                  <label for="form__achievement-input-four" class="form__achievement-label">Накупил сувениров
+                  </label>
+                </div>
+                <div class="form__achievement-container form__achievement-container--five">
+                  <input id="form__achievement-input-five" type="checkbox" name="achievement" value="check-5" class="form__achievement-input">
+                  <label for="form__achievement-input-five" class="form__achievement-label">Удержал башню
+                  </label>
+                </div>
+                <div class="form__achievement-container form__achievement-container--six">
+                  <input id="form__achievement-input-six" type="checkbox" name="achievement" value="check-6" class="form__achievement-input">
+                  <label for="form__achievement-input-six" class="form__achievement-label">Разгромил отель
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__contacts grid-for-form__contacts">
+              <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+              <div class="form__contacts-container">
+                <label class="form__label-text form__label-text--contacts form__label-phone"><span class="form__title form__title--contacts">Номер телефона</span>
+                  <input type="text" placeholder="Номер, пожалуйста" class="form__input-text">
+                </label>
+                <label class="form__label-text form__label-text--contacts form__label-mail"><span class="form__title  form__title--contacts">Адрес почты</span>
+                  <input type="text" placeholder="Введите почту *" class="form__input-text">
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__what-application  grid-for-form__what-application">
+              <legend class="form__legend form__legend--what-application">С каким приложением путешествовали?</legend>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-one" type="radio" name="what-application" value="check-1" class="form__what-application-input">
+                <label for="form__what-application-input-one" class="form__what-application-label">Pink для iOS
+                </label>
+              </div>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-two" type="radio" name="what-application" value="check-2" class="form__what-application-input">
+                <label for="form__what-application-input-two" class="form__what-application-label">Pink на Android
+                </label>
+              </div>
+              <div class="form__what-application-container">
+                <input id="form__what-application-input-three" type="radio" name="what-application" value="check-3" class="form__what-application-input">
+                <label for="form__what-application-input-three" class="form__what-application-label">Windows Phone
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form__emotions grid-for-form__emotions">
+              <legend class="form__legend form__legend--emotions">Опишите свои эмоции</legend>
+              <textarea name="emotions" id="form__emotions-text" rows="1" class="form__emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="form__sending grid-for-form__sending">
+              <input type="submit" value="Отправить форму" class="form__sending-button">
+              <p class="form__footnote">
+                <span class="form__footnote-star">*</span> — обязательные<span class="form__footnote--hidden-text"> для заполнения</span> поля
+              </p>
+            </div>
+          </div>
+        </form>
     </main>
     <footer class="footer grid-for-footer">
       <div class="grid-for-footer-wrapper wrapper">
@@ -48,22 +141,18 @@
         </div>
         <div class="social grid-for-footer__social">
           <a href="" class="social__twitter">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-              <g id="W6EeEF_1_">
-                <g>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
-                </g>
-              </g>
+            <svg class="social__twitter-svg">
+              <use xlink:href="img/spite.svg#icon-twitter"></use>
             </svg>
           </a>
           <a href="" class="social__facebook">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewBox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
-              <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+            <svg class="social__facebook-svg">
+              <use xlink:href="img/spite.svg#icon-facebook"></use>
             </svg>
           </a>
           <a href="" class="social__youtube">
-            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewBox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
-              <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+            <svg class="social__youtube-svg">
+              <use xlink:href="img/spite.svg#icon-youtube"></use>
             </svg>
           </a>
         </div>
@@ -76,5 +165,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
