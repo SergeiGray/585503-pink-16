@@ -13,5 +13,12 @@
 @media (min-width: $desktop-version) {
   .button {
     font-size: 21px;
+    &:hover {
+      background-color: #ffffff;
+      color: #d22856;
+    }
   }
+}
+.button:active .button__text {
+  opacity: 0.3;
 }

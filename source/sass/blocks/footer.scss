@@ -3,12 +3,33 @@
     margin: auto;
     width: 147px;
     height: 40px;
-    background: url(../img/logo-pink-blue-mobile.svg) no-repeat;
+    background-image: url(../img/logo-pink-blue-mobile.svg);
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url(../img/logo-pink-blue-mobile-hover.svg);
+    }
+    &:active {
+      background-image: url(../img/logo-pink-blue-mobile.svg);
+      opacity: 0.3;
+    }
   }
 @media (min-width: $tablet-version) {
   .footer__logo {
     margin: 5px 0;
     align-self: flex-start;
+  }
+}
+@media (min-width: $desktop-version) {
+  .footer__logo {
+    background-image: url(../img/logo-pink-blue-desktop.svg);
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url(../img/logo-pink-blue-desktop-hover.svg);
+    }
+    &:active {
+      background-image: url(../img/logo-pink-blue-desktop.svg);
+      opacity: 0.3;
+    }
   }
 }
 .footer--index-page {

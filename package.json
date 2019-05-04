@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "pink-16",
   "version": "16.0.0",
   "private": true,
@@ -9,6 +9,7 @@
     "browser-sync": "2.26.x",
     "del": "^4.1.1",
     "gulp": "4.0.x",
+    "gulp-minify-css": "^1.2.4",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "4.0.x",
