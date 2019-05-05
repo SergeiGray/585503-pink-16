@@ -187,6 +187,18 @@
   border: 2px solid #2aab6d;
   border-radius: 3px;
   padding: 19px 45px;
+  &:hover {
+    background-color: #1c9b5e;
+    border: 2px solid #1c9b5e;
+  }
+  &:active {
+    color: #60b98e;
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+    border: 2px solid #e5e5e5;
+    color: #ffffff;
+  }
 }
 @media (min-width: $tablet-version) {
   .form__sending-button {
@@ -256,7 +268,7 @@
       content: '';
       position: absolute;
       top: 14px;
-      right: 0;
+      right: 2px;
       width: 60px;
       height: 60px;
       background-color: #e5e5e5;
@@ -271,7 +283,7 @@
       content: '';
       position: absolute;
       top: 14px;
-      right: 0;
+      right: 2px;
       width: 60px;
       height: 60px;
       background-color: #e5e5e5;
@@ -291,6 +303,12 @@
   padding: 18px 20px;
   &::placeholder {
     opacity: 1;
+  }
+  &:hover {
+    border: 2px solid #283645;
+  }
+  &:active {
+    border: 2px solid #d22856;
   }
 }
 @media (min-width: $tablet-version) {
@@ -423,6 +441,16 @@
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
   }
+  &:hover {
+    &::before {
+      border: 2px solid #283645;
+    }
+  }
+  &:active {
+    &::before {
+      border: 2px solid #d22856;
+    }
+  }
 }
 @media (min-width: $tablet-version) {
   .form__achievement-label {
@@ -467,6 +495,16 @@
     border: 2px solid #e5e5e5;
     border-radius: 50%;
     background-color: #ffffff;
+  }
+  &:hover {
+    &::before {
+      border: 2px solid #283645;
+    }
+  }
+  &:active {
+    &::before {
+      border: 2px solid #d22856;
+    }
   }
 }
 @media (min-width: $tablet-version) {
