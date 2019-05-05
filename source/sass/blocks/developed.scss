@@ -17,4 +17,11 @@
   height: 34px;
   fill: #d22856;
   margin-left: 15px;
+  &:hover {
+    fill: #283645;
+  }
+  &:active {
+    fill: #283645;
+    opacity: 0.3;
+  }
 }

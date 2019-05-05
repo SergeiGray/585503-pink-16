@@ -26,7 +26,13 @@
   height: 22px;
   margin-left: 20px;
   background: url(../img/logo-pink-white-mobile.svg) no-repeat;
-  @include link-in-menu;
+  &:hover {
+    background-image: url(../img/logo-pink-white-mobile-hover.svg);
+  }
+  &:active {
+    background-image: url(../img/logo-pink-white-mobile.svg);
+    opacity: 0.3;
+  }
 }
 @media (min-width: $tablet-version){
   .menu__logo {
@@ -35,21 +41,33 @@
     margin-left: 0;
     padding-bottom: 20px;
     background: url(../img/logo-pink-white-tablet.svg) no-repeat;
+    &:hover {
+      background-image: url(../img/logo-pink-white-tablet-hover.svg);
+    }
+    &:active {
+      background-image: url(../img/logo-pink-white-tablet.svg);
+      opacity: 0.3;
+    }
   }
 }
 @media (min-width: $desktop-version) {
   .menu__logo {
     margin-left: 0;
-    background: url(../img/logo-pink-white-desktop.svg) no-repeat;
+    background-image: url(../img/logo-pink-white-desktop.svg);
+    background-repeat: no-repeat;
+    &:hover {
+      background-image: url(../img/logo-pink-white-desktop-hover.svg);
+    }
+    &:active {
+      background-image: url(../img/logo-pink-white-desktop.svg);
+      opacity: 0.3;
+    }
   }
 }
 .menu__menu-toggle {
-  width: 24px;
-  height: 23px;
+  width: 50px;
+  height: 24px;
   margin-right: 20px;
-  background-image: url(../img/icon-menu-cross.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 @media (min-width: $tablet-version){
   .menu__menu-toggle {
@@ -81,7 +99,23 @@
   @include list-reset;
 }
 .menu__link {
-  @include link-in-menu;
+  color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    color: #d22856;
+  }
+  &:active {
+    color: #d22856;
+    opacity: 0.3;
+  }
+}
+@media (min-width: $desktop-version) {
+  .menu__link {
+    &:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+  }
 }
 .menu__script-on {
   display: none;
@@ -91,12 +125,23 @@
   &--menu-head {
     box-shadow: none;
   }
-  &--menu-toggle {
-    background-image: url(../img/icon-menu-burger.svg);
+  &--menu-toggle-off {
+    display: none;
   }
 }
 @media (min-width: $desktop-version) {
   .menu__script-on {
     display: flex;
+  }
+}
+.menu__cross,
+.menu__burger {
+  fill: #ffffff;
+  &:hover {
+    fill: #d22856;
+  }
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
   }
 }
