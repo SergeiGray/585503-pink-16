@@ -1,17 +1,20 @@
 .why-pink {
   background-color: #f2f2f2;
 }
+
 .why-pink__questions-list {
   min-width: 100%;
   background-color: #ffffff;
   line-height: 29px;
 }
+
 .why-pink__question {
   text-align: center;
   color: #283645;
   font-size: 24px;
   font-weight: 300;
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__question {
     font-size: 40px;
@@ -19,32 +22,38 @@
     word-spacing: -3px;
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__question {
     font-size: 50px;
     line-height: 61px;
   }
 }
+
 .why-pink__gradient-separator {
   min-width: 100%;
   min-height: 90px;
-  background: linear-gradient(175deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
+  background: linear-gradient(175deg, #ffffff 0, #ffffff 50px, #f2f2f2 50px, #f2f2f2 100px);
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__gradient-separator {
     min-height: 60px;
-    background: linear-gradient(177deg, #fff 0px, #fff 50px, #f2f2f2 50px, #f2f2f2 100px);
+    background: linear-gradient(177deg, #ffffff 0, #ffffff 50px, #f2f2f2 50px, #f2f2f2 100px);
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__gradient-separator {
     min-height: 90px;
-    background: linear-gradient(176deg, #fff 0px, #fff 100px, #f2f2f2 100px, #f2f2f2 200px);
+    background: linear-gradient(176deg, #ffffff 0, #ffffff 100px, #f2f2f2 100px, #f2f2f2 200px);
   }
 }
+
 .why-pink__benefits-list {
   list-style: none;
 }
+
 .why-pink__benefit-header {
   color: #000000;
   font-size: 18px;
@@ -52,12 +61,14 @@
   line-height: 24px;
   text-align: center;
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__benefit-header {
     font-size: 30px;
     line-height: 30px;
   }
 }
+
 .why-pink__benefit-paragraph {
   color: #283645;
   font-size: 14px;
@@ -65,11 +76,13 @@
   font-weight: 400;
   text-align: center;
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__benefit-paragraph {
     text-align: left;
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__benefit-paragraph {
     font-size: 18px;
@@ -77,64 +90,70 @@
     text-align: center;
   }
 }
+
 .why-pink__benefits-image {
   width: 157px;
   height: 320px;
-  background-image: url(../img/iphone-screen-mobile@1x.png);
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center 45px;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-    background-image: url(../img/iphone-screen-mobile@2x.png);
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
     background-size: 157px auto;
   }
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__benefits-image {
     width: 268px;
     height: 481px;
-    background-image: url(../img/iphone-screen-3-tablet@1x.png) ;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center top;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/iphone-screen-3-tablet@2x.png);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
       background-size: 268px auto;
     }
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__benefits-image {
     width: 100%;
     height: 302px;
-    background-image: url(../img/iphone-screen-1-desktop@1x.png),
-                url(../img/iphone-screen-2-desktop@1x.png),
-                url(../img/iphone-screen-3-desktop@1x.png);
+    background-image: url("../img/iphone-screen-1-desktop@1x.png"), url("../img/iphone-screen-2-desktop@1x.png"), url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: left top, center top, right top;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx){
-      background-image: url(../img/iphone-screen-1-desktop@2x.png),
-                url(../img/iphone-screen-2-desktop@2x.png),
-                url(../img/iphone-screen-3-desktop@2x.png);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png"), url("../img/iphone-screen-2-desktop@2x.png"), url("../img/iphone-screen-3-desktop@2x.png");
       background-size: 292px auto;
     }
   }
 }
+
 .why-pink__last-benefit {
   display: none;
   color: #283645;
   background-color: #ffffff;
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__last-benefit {
     display: flex;
     justify-content: center;
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__last-benefit {
     background-color: #f2f2f2;
     font-size: 18px;
   }
 }
+
 .why-pink__last-benefit-header {
   color: #000000;
   font-size: 30px;
@@ -142,32 +161,38 @@
   line-height: 37px;
   margin: 0 0 10px 0;
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__last-benefit-header {
     margin-bottom: 20px;
   }
 }
+
 .why-pink__last-benefit-text {
   line-height: 23px;
   margin: 0 0 14px 0;
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__last-benefit-text {
     line-height: 31px;
     margin-bottom: 31px;
   }
 }
+
 .why-pink__last-benefit-image {
   position: relative;
   width: 238px;
   height: 276px;
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__last-benefit-image {
     width: 298px;
     height: 345px;
   }
 }
+
 .why-pink__last-benefit-svg {
   width: 238px;
   height: 276px;
@@ -179,6 +204,7 @@
     height: 345px;
   }
 }
+
 .why-pink__24hours {
   display: flex;
   justify-content: center;
@@ -196,6 +222,7 @@
   border-radius: 100%;
   border: 14px solid #d22856;
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__24hours {
     top: -50px;
@@ -207,17 +234,21 @@
     padding-top: 27px;
   }
 }
+
 .why-pink__last-benefit-link {
   color: #d22856;
 }
+
 .why-pink__new-line {
   display: inline;
 }
+
 @media (min-width: $tablet-version) {
   .why-pink__new-line {
     display: block;
   }
 }
+
 @media (min-width: $desktop-version) {
   .why-pink__new-line {
     display: inline;
