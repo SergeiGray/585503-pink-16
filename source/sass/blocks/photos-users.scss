@@ -115,3 +115,34 @@
     height: auto;
   }
 }
+
+.photos-users__panorama-label {
+  position: absolute;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  top: 0;
+  right: 20px;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0;
+  background-color: #d22856;
+}
+
+@media (min-width: $tablet-version) {
+  .photos-users__panorama-label {
+    top: 56px;
+    right: 40px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .photos-users__panorama-label {
+    top: 53px;
+    right: 130px;
+  }
+}

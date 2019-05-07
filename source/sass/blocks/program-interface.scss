@@ -1,0 +1,32 @@
+.program-interface {
+  background-color: #f2f2f2;
+}
+
+.program-interface__picture {
+  line-height: 0;
+}
+
+.program-interface__tuning-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.program-interface__crop-svg {
+  width: 44px;
+  height: 44px;
+  fill: #d22856;
+}
+
+.program-interface__fill-svg {
+  width: 48px;
+  height: 43px;
+  fill: #283645;
+  opacity: 0.3;
+}
+
+.program-interface__contrast-svg {
+  width: 32px;
+  height: 32px;
+  fill: #283645;
+  opacity: 0.3;
+}

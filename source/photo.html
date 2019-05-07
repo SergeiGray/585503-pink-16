@@ -16,11 +16,11 @@
             <a href="in" class="menu__logo">
             </a>
             <div class="menu__menu-toggle">
-              <svg class="menu__cross">
+              <svg class="menu__cross" width="24" height="24">
                 <title>Скрыть меню</title>
                 <use xlink:href="img/spite.svg#icon-menu-cross"></use>
               </svg>
-              <svg class="menu__burger menu__script-on--menu-toggle-off">
+              <svg class="menu__burger menu__script-on--menu-toggle-off" width="50" height="24">
                 <title>Показать меню</title>
                 <use xlink:href="img/spite.svg#icon-menu-burger"></use>
               </svg>
@@ -73,6 +73,7 @@
               srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img src="img/panorama-mobile@1x.jpg" alt="Панорама" class="photos-users__image grid-for-photos-users__image photos-users__image--panorama" srcset="img/panorama-mobile@2x.jpg 2x">
           </picture>
+          <div class="photos-users__panorama-label">Панорама дня</div>
           <div class="wrapper">
             <figcaption class="photos-users__custom-data wrapper grid-for-photos-users__custom-data grid-for-photos-users__custom-data--panorama">
               <div>
@@ -273,6 +274,59 @@
               </figcaption>
             </figure>
           </div>
+          <div class="photos-users__last-call">
+            <p>Затмите их всех!</p>
+            <p>Выкладывайте все, что накопилось в телефоне!</p>
+          </div>
+      </div>
+      <div class="program-interface">
+        <div class="grid-for-program-interface wrapper">
+          <picture class="program-interface__picture">
+            <source
+              type="image/webp"
+              media="(min-width: 960px)"
+              srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source
+              type="image/webp"
+              media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source
+              type="image/webp"
+              srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+              <source
+              media="(min-width: 960px)"
+              srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source
+              media="(min-width: 660px)"
+              srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img src="img/photo-road-mobile@1x.jpg" alt="Заснеженная дорога" class="photos-users__image grid-for-photos-users__image photos-users__image--sixth-post" srcset="img/photo-road-mobile@2x.jpg 2x">
+          </picture>
+          <div class="program-interface__tuning">
+            <div class="program-interface__tuning-items">
+              <div class="program-interface__crop">
+                <svg class="program-interface__crop-svg">
+                  <use xlink:href="img/spite.svg#icon-editor-crop"></use>
+                </svg>
+              </div>
+              <div class="program-interface__fill">
+                <svg class="program-interface__fill-svg">
+                  <use xlink:href="img/spite.svg#icon-editor-fill"></use>
+                </svg>
+              </div>
+              <div class="program-interface__contrast">
+                <svg class="program-interface__contrast-svg">
+                  <use xlink:href="img/spite.svg#icon-editor-contrast"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="program-interface__tuning-scale">
+            </div>
+            <div class="program-interface__buttons">
+              <button class="button">Запостить</button>
+              <button class="button">Отмена</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer grid-for-footer">
