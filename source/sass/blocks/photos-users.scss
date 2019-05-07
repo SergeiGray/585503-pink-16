@@ -66,12 +66,26 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 31px;
   padding-bottom: 20px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: left 6px;
 }
 
 @media (min-width: $tablet-version) {
   .photos-users__likes {
+    width: 241px;
     line-height: 29px;
+    padding-left: 0;
+    background-position: right 8px;
+
+    &--panorama {
+      position: absolute;
+      width: 150px;
+      background-position: 107px 8px;
+      right: 0;
+    }
   }
 }
 
