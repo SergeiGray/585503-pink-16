@@ -161,6 +161,13 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .photos-users__last-call {
+    padding-top: 7px;
+    padding-bottom: 64px;
+  }
+}
+
 .photos-users__last-call-item {
   line-height: 30px;
   margin: 0;

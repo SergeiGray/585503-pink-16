@@ -635,7 +635,6 @@
 
 @media (min-width: $desktop-version) {
   .grid-for-footer {
-    margin-top: 65px;
     margin-bottom: 75px;
   }
 }
@@ -787,5 +786,12 @@
     flex-wrap: wrap;
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .grid-for-program-interface {
+    padding-left: 80px;
+    margin: 0;
   }
 }
