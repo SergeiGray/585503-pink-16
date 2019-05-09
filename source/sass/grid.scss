@@ -775,7 +775,17 @@
 
 /*program-interface*/
 .grid-for-program-interface {
+  @include flex-column;
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+@media (min-width: $tablet-version) {
+  .grid-for-program-interface {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

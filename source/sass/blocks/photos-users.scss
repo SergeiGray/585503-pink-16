@@ -153,6 +153,14 @@
   padding-bottom: 44px;
 }
 
+@media (min-width: $tablet-version) {
+  .photos-users__last-call {
+    font-size: 18px;
+    padding-top: 42px;
+    padding-bottom: 68px;
+  }
+}
+
 .photos-users__last-call-item {
   line-height: 30px;
   margin: 0;
