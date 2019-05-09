@@ -1,14 +1,28 @@
 .program-interface {
+  @include flex-column;
   background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 42px;
+  margin-bottom: 20px;
 }
 
 .program-interface__picture {
+  @include flex-column;
   line-height: 0;
+  margin-bottom: 40px;
+}
+
+.program-interface__tuning {
+  @include flex-column;
 }
 
 .program-interface__tuning-items {
-  display: flex;
-  flex-direction: row;
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 33px;
+  padding-right: 47px;
+  margin-bottom: 37px;
 }
 
 .program-interface__crop-svg {
@@ -29,4 +43,60 @@
   height: 32px;
   fill: #283645;
   opacity: 0.3;
+}
+
+.program-interface__buttons {
+  @include flex-column;
+}
+
+.program-interface__tuning-scale {
+  position: relative;
+  background-color: #283645;
+  width: 240px;
+  height: 2px;
+  margin: 0 auto 75px;
+}
+
+.program-interface__tuning-scale-svg {
+  position: absolute;
+  top: -7px;
+  right: 35px;
+  width: 14px;
+  height: 14px;
+  fill: #f2f2f2;
+}
+
+.program-interface__button-post {
+  color: #d22856;
+  letter-spacing: 1px;
+  border-color: #d22856;
+  margin-bottom: 13px;
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+  &:active .program-interface__button-post-text {
+     opacity: 0.3;
+  }
+}
+
+.program-interface__button-cancel {
+  color: #283645;
+  border-color: #283645;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #283645;
+  }
+
+  &:active .program-interface__button-cancel-text {
+    opacity: 0.3;
+    color: #ffffff;
+  }
 }

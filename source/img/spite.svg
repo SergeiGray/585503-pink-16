@@ -52,4 +52,8 @@
     <path fill="inherit" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
   </symbol>
 
+  <symbol id="icon-editor-diagram-fill" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14">
+    <circle fill="inherit" stroke="#d22856" stroke-width="2" r="5" cx="7" cy="7"></circle>
+  </symbol>
+
 </svg>

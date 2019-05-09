@@ -275,8 +275,8 @@
             </figure>
           </div>
           <div class="photos-users__last-call">
-            <p>Затмите их всех!</p>
-            <p>Выкладывайте все, что накопилось в телефоне!</p>
+            <p class="photos-users__last-call-item">Затмите их всех!</p>
+            <p class="photos-users__last-call-item">Выкладывайте все, что накопилось в телефоне!</p>
           </div>
       </div>
       <div class="program-interface">
@@ -320,10 +320,17 @@
               </div>
             </div>
             <div class="program-interface__tuning-scale">
+              <svg class="program-interface__tuning-scale-svg">
+                <use xlink:href="img/spite.svg#icon-editor-diagram-fill"></use>
+              </svg>
             </div>
             <div class="program-interface__buttons">
-              <button class="button">Запостить</button>
-              <button class="button">Отмена</button>
+              <button class="button program-interface__button-post">
+                <span class="program-interface__button-post-text">Запостить</span>
+              </button>
+              <button class="button program-interface__button-cancel">
+                <span class="program-interface__button-cancel-text">Отмена</span>
+              </button>
             </div>
           </div>
         </div>
