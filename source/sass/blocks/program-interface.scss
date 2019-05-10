@@ -135,6 +135,10 @@
   height: 43px;
   fill: #283645;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-version) {
@@ -142,6 +146,12 @@
     width: 24px;
     height: 22px;
     margin-right: 31px;
+    fill: #d22856;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -175,6 +185,10 @@
   height: 32px;
   fill: #283645;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: $tablet-version) {
@@ -183,6 +197,12 @@
     height: 16px;
     margin-right: 31px;
     margin-top: 4px;
+    fill: #d22856;
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -255,16 +275,36 @@
   height: 14px;
   fill: #f2f2f2;
 
+  &:active {
+    fill: #d22856;
+  }
+
   &--crop {
     right: 42px;
   }
 
   &--fill {
-    left: 23px;
+    right: 165px;
   }
 
   &--contrast {
     right: 92px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .program-interface__tuning-scale-svg {
+    &--crop {
+      right: 203px;
+    }
+
+    &--fill {
+      right: 27px;
+    }
+
+    &--contrast {
+      right: 113px;
+    }
   }
 }
 
@@ -305,6 +345,7 @@
   opacity: 0.1;
 
   &:hover {
+    color: #283645;
     opacity: 0.3;
   }
 
