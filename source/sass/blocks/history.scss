@@ -1,0 +1,20 @@
+.history {
+  @include flex-column;
+  align-items: center;
+}
+
+.history__author-name {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.history__author-data {
+  display: none;
+  text-align: center;
+}
+
+.history__text {
+  text-align: center;
+}
+

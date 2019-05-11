@@ -1,5 +1,4 @@
 .pop-up__application-sent {
-  display: none;
   position: fixed;
   top: 20%;
   left: 50%;
@@ -10,6 +9,7 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   text-align: center;
+  display: none;
 }
 
 @media (min-width: $tablet-version) {
