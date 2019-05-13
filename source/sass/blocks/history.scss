@@ -2,11 +2,24 @@
   @include flex-column;
   align-items: center;
   padding-top: 43px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+}
+
+@media (min-width: $tablet-version) {
+  .history {
+    padding-top: 31px;
+    margin-bottom: 10px;
+  }
 }
 
 .history__author {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-version) {
+  .history__author {
+    margin-bottom: 38px;
+  }
 }
 
 .history__author-name {
@@ -15,23 +28,46 @@
   font-weight: 700;
 }
 
+@media (min-width: $tablet-version) {
+  .history__author-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
 .history__author-data {
   display: none;
   text-align: center;
+}
+
+@media (min-width: $tablet-version) {
+  .history__author-data {
+    display: inline-block;
+  }
 }
 
 .history__text {
   width: 283px;
   text-align: center;
   line-height: 30px;
+  color: #283645;
   margin-top: 0;
   margin-bottom: 33px;
+}
+
+@media (min-width: $tablet-version) {
+  .history__text {
+    order: -1;
+    width: 620px;
+    font-size: 18px;
+    margin-bottom: 36px;
+  }
 }
 
 .history__navigation {
   @include flex-row;
   justify-content: space-between;
-  width: 60px;
+  width: 64px;
 }
 
 .history__navigation-svg {

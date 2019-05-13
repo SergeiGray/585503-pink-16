@@ -1,0 +1,31 @@
+.map {
+  position: relative;
+  width: 100vw;
+  height: 238px;
+  overflow: hidden;
+}
+
+@media (min-width: $tablet-version) {
+  .map {
+    height: 402px;
+    margin-bottom: 30px;
+  }
+}
+
+.map__arrow-svg {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media (min-width: $tablet-version) {
+  .map__arrow-svg {
+    top: -27px;
+  }
+}
+
+.map__frame {
+  margin-left: -20%;
+  margin-top: -25%;
+}

@@ -1,0 +1,78 @@
+.contacts {
+  @include flex-column;
+  align-items: center;
+  padding-top: 41px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts {
+    padding-top: 45px;
+  }
+}
+
+.contacts__header {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__header {
+    font-size: 40px;
+    line-height: 48px;
+    width: 385px;
+    margin-bottom: 45px;
+  }
+}
+
+.contacts__tel {
+  text-align: center;
+  margin: 0 0 23px;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__tel {
+    margin-left: 18px;
+  }
+}
+
+.contacts__mail {
+  text-align: center;
+  margin: 0 0 26px;
+}
+
+.contacts__address {
+  text-align: center;
+}
+
+.contacts__text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #283645;
+  margin: 0;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__text {
+    margin-bottom: 3px;
+  }
+}
+
+.contacts__data {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #d22856;
+  margin: 0;
+}
+
+@media (min-width: $tablet-version) {
+  .contacts__container {
+    @include flex-row;
+    justify-content: space-between;
+    width: 568px;
+    margin-bottom: 21px;
+  }
+}
