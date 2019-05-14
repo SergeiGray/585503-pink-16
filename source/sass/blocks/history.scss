@@ -8,7 +8,14 @@
 @media (min-width: $tablet-version) {
   .history {
     padding-top: 31px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .history {
+    padding-top: 76px;
+    margin-bottom: 0;
   }
 }
 
@@ -19,6 +26,12 @@
 @media (min-width: $tablet-version) {
   .history__author {
     margin-bottom: 38px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .history__author {
+    margin-bottom: 27px;
   }
 }
 
@@ -35,6 +48,13 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .history__author-name {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+}
+
 .history__author-data {
   display: none;
   text-align: center;
@@ -43,6 +63,28 @@
 @media (min-width: $tablet-version) {
   .history__author-data {
     display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .history__author-data {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-version) {
+  .history__text-container {
+    @include flex-row;
+    justify-content: space-between;
+    order: -1;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .history__text-container {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 34px;
   }
 }
 
@@ -57,10 +99,16 @@
 
 @media (min-width: $tablet-version) {
   .history__text {
-    order: -1;
     width: 620px;
     font-size: 18px;
     margin-bottom: 36px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .history__text {
+    width: 690px;
+    margin-bottom: 0;
   }
 }
 
@@ -68,6 +116,12 @@
   @include flex-row;
   justify-content: space-between;
   width: 64px;
+}
+
+@media (min-width: $tablet-version) {
+  .history__navigation {
+    display: none;
+  }
 }
 
 .history__navigation-svg {
@@ -88,6 +142,64 @@
     &:hover {
       fill: #ffffff;
       stroke: #283645;
+    }
+  }
+}
+.history__quotes-svg {
+  display: none;
+}
+
+@media (min-width: $desktop-version) {
+  .history__quotes-svg {
+    display: flex;
+    width: 79px;
+    height: 63px;
+    order: -2;
+    fill: #efefef;
+    margin-bottom: 49px;
+  }
+}
+
+.history__arrow-left-svg {
+  display: none;
+}
+
+@media (min-width: $desktop-version) {
+  .history__arrow-left-svg {
+    display: flex;
+    width: 22px;
+    height: 41px;
+    fill: #283645;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
+}
+
+.history__arrow-right-svg {
+  display: none;
+}
+
+@media (min-width: $desktop-version) {
+  .history__arrow-right-svg {
+    display: flex;
+    width: 22px;
+    height: 41px;
+    fill: #283645;
+    opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }

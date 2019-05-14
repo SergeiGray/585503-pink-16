@@ -3,7 +3,7 @@
 }
 
 .why-pink__questions-list {
-  min-width: 100%;
+  width: 100%;
   background-color: #ffffff;
   line-height: 29px;
 }
@@ -27,6 +27,8 @@
   .why-pink__question {
     font-size: 50px;
     line-height: 61px;
+    letter-spacing: -1px;
+    word-spacing: 1px;
   }
 }
 
@@ -40,12 +42,20 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 @media (min-width: $desktop-version) {
   .why-pink__benefit-header {
     font-size: 30px;
     line-height: 30px;
+    width: 215px;
+    margin-bottom: 25px;
+
+    &--third {
+      width: 225px;
+    }
   }
 }
 
@@ -55,6 +65,7 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: $tablet-version) {
@@ -145,6 +156,8 @@
 @media (min-width: $desktop-version) {
   .why-pink__last-benefit-header {
     margin-bottom: 20px;
+    letter-spacing: 1px;
+    word-spacing: -3px;
   }
 }
 

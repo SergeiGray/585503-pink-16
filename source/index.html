@@ -75,16 +75,16 @@
         <div class="grid-for-why-pink__benefits-list-wrapper wrapper">
           <ul class="why-pink__benefits-list grid-for-why-pink__benefits-list">
             <li class="why-pink__benefit grid-for-why-pink__benefit">
-              <h2 class="why-pink__benefit-header grid-for-why-pink__benefit-header">Поднимает настроение</h2>
-              <p class="why-pink__benefit-paragraph grid-for-why-pink__benefit-paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <h2 class="why-pink__benefit-header why-pink__benefit-header--first">Поднимает настроение</h2>
+              <p class="why-pink__benefit-paragraph">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="why-pink__benefit grid-for-why-pink__benefit">
-              <h2 class="why-pink__benefit-header grid-for-why-pink__benefit-header">Меняет мир вокруг</h2>
-              <p class="why-pink__benefit-paragraph grid-for-why-pink__benefit-paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="why-pink__new-line">усилить эффект</span></p>
+              <h2 class="why-pink__benefit-header why-pink__benefit-header--second">Меняет мир вокруг</h2>
+              <p class="why-pink__benefit-paragraph">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <span class="why-pink__new-line">усилить эффект</span></p>
             </li>
             <li class="why-pink__benefit grid-for-why-pink__benefit">
-              <h2 class="why-pink__benefit-header grid-for-why-pink__benefit-header">Заводит новых друзей</h2>
-              <p class="why-pink__benefit-paragraph grid-for-why-pink__benefit-paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <h2 class="why-pink__benefit-header why-pink__benefit-header--third">Заводит новых друзей</h2>
+              <p class="why-pink__benefit-paragraph">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="why-pink__benefits-image grid-for-why-pink__benefits-image">
@@ -112,9 +112,20 @@
           <div class="history__author-name">Николай Петров</div>
           <div class="history__author-data">25 лет, водитель трамвая</div>
         </div>
-        <blockquote class="history__text">
-          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </blockquote>
+        <svg class="history__quotes-svg">
+          <use xlink:href="img/spite.svg#icon-quotes"></use>
+        </svg>
+        <div  class="history__text-container">
+          <svg class="history__arrow-left-svg">
+            <use xlink:href="img/spite.svg#icon-arrow-left"></use>
+          </svg>
+          <blockquote class="history__text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </blockquote>
+          <svg class="history__arrow-right-svg">
+            <use xlink:href="img/spite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
         <div class="history__navigation">
           <svg class="history__navigation-svg history__navigation-svg--active" width="14" height="14">
             <use xlink:href="img/spite.svg#icon-bullet"></use>
@@ -226,20 +237,20 @@
       </div>
       <div class="contacts wrapper">
         <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="contacts__container">
-        <div class="contacts__tel">
-          <p class="contacts__text">Звоните:</p>
-          <p class="contacts__data">+7 (812) 555-66-66</p>
-        </div>
-        <div class="contacts__mail">
-          <p class="contacts__text">Пишите:</p>
-          <p class="contacts__data">mail@htmlacademy.ru</p>
-        </div>
-      </div>
-        <div class="contacts__address">
-          <p class="contacts__text">Приезжайте в гости:</p>
-          <p class="contacts__data">ул. Большая</p>
-          <p class="contacts__data">Конюшенная, 19/8</p>
+        <div class="contacts__container">
+          <div class="contacts__tel">
+            <p class="contacts__text">Звоните:</p>
+            <a class="contacts__data contacts__data--link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__mail">
+            <p class="contacts__text">Пишите:</p>
+            <a class="contacts__data contacts__data--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__address">
+            <p class="contacts__text">Приезжайте в гости:</p>
+            <p class="contacts__data">ул. Большая</p>
+            <p class="contacts__data">Конюшенная, 19/8</p>
+          </div>
         </div>
       </div>
       <div class="map">

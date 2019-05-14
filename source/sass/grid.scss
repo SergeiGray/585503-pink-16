@@ -433,22 +433,6 @@
   }
 }
 
-.grid-for-why-pink__benefit-header {
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-@media (min-width: $desktop-version) {
-  .grid-for-why-pink__benefit-header {
-    max-width: 215px;
-    margin-bottom: 25px;
-  }
-}
-
-.grid-for-why-pink__benefit-paragraph {
-  margin: 0;
-}
-
 .grid-for-why-pink__benefits-image {
   margin-top: 0;
 }
@@ -497,7 +481,7 @@
 
 @media (min-width: $desktop-version) {
   .grid-for-why-pink__last-benefit-header {
-    width: 310px;
+    width: 330px;
   }
 }
 
@@ -510,7 +494,7 @@
   .grid-for-why-pink__last-benefit-container {
     max-width: 525px;
     margin-top: 90px;
-    margin-left: 65px;
+    margin-left: 67px;
     padding-top: 0;
   }
 }

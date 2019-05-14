@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: $desktop-version) {
+  .map {
+    height: 503px;
+    margin-bottom: 65px;
+  }
+}
+
 .map__arrow-svg {
   position: absolute;
   top: -50px;
@@ -22,6 +29,12 @@
 @media (min-width: $tablet-version) {
   .map__arrow-svg {
     top: -27px;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .map__arrow-svg {
+    top: -16px;
   }
 }
 
