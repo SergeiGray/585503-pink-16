@@ -1,8 +1,8 @@
 .platform {
   color: #ffffff;
-  font-size: 13px;
   font-weight: 300;
   line-height: 24px;
+  word-spacing: -1px;
 }
 
 @media (min-width: $tablet-version) {
@@ -12,5 +12,6 @@
     line-height: 24px;
     text-align: center;
     word-spacing: -2px;
+    width: 300px;
   }
 }

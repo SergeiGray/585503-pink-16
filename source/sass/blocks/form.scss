@@ -7,6 +7,12 @@
   margin-bottom: 28px;
 }
 
+@media (min-width: $desktop-version) {
+  .form {
+    margin-bottom: 64px;
+  }
+}
+
 .form__head {
   color: #283645;
   font-size: 14px;
@@ -56,7 +62,6 @@
 }
 
 .form__user-initials {
-  @include flex-column;
   padding: 0;
   border: none;
 }
@@ -74,7 +79,6 @@
 }
 
 .form__achievement {
-  @include flex-column;
   background-color: #f2f2f2;
   border: none;
   padding: 0;
@@ -112,7 +116,6 @@
 }
 
 .form__contacts {
-  @include flex-column;
   padding: 38px 0 21px 0;
   border: none;
 }
@@ -130,8 +133,6 @@
     width: 100%;
     padding-top: 21px;
     padding-bottom: 0;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -148,7 +149,6 @@
 }
 
 .form__what-application {
-  @include flex-column;
   background-color: #f2f2f2;
   padding: 0 0 25px 0;
   border: none;
@@ -171,7 +171,6 @@
 }
 
 .form__emotions {
-  @include flex-column;
   padding: 0;
   border: none;
 }
@@ -297,7 +296,7 @@
 
 @media (min-width: $desktop-version) {
   .form__label-text {
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 
     &--contacts {
       display: inline-flex;
@@ -316,10 +315,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 14px;
+      top: 10px;
       right: 2px;
       width: 60px;
-      height: 60px;
+      height: 64px;
       background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
@@ -333,10 +332,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 14px;
+      top: 10px;
       right: 2px;
       width: 60px;
-      height: 60px;
+      height: 64px;
       background-color: #e5e5e5;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
@@ -349,9 +348,9 @@
   border: 2px solid #e5e5e5;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   word-spacing: -4px;
-  margin-top: 12px;
+  margin-top: 10px;
   padding: 18px 20px;
 
   &::placeholder {
@@ -449,7 +448,7 @@
     }
 
     &--contacts {
-      display: inline;
+      display: flex;
     }
 
     &--what-application {

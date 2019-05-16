@@ -66,11 +66,13 @@
   font-weight: 400;
   text-align: center;
   margin: 0;
+  width: 260px;
 }
 
 @media (min-width: $tablet-version) {
   .why-pink__benefit-paragraph {
     text-align: left;
+    width: 310px;
   }
 }
 
@@ -79,6 +81,18 @@
     font-size: 18px;
     line-height: 30px;
     text-align: center;
+
+    &--first {
+      width: 250px;
+    }
+
+    &--second {
+      width: 240px;
+    }
+
+    &--third {
+      width: 245px;
+    }
   }
 }
 
