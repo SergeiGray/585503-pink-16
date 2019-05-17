@@ -8,14 +8,12 @@
 .photos-users__custom-data {
   background-color: #f2f2f2;
   box-sizing: border-box;
-  width: 280px;
   padding-top: 16px;
   padding-left: 17px;
 }
 
 @media (min-width: $tablet-version) {
   .photos-users__custom-data {
-    width: 100%;
     padding-top: 21px;
     padding-left: 27px;
   }

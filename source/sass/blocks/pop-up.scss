@@ -1,8 +1,8 @@
 .pop-up__application-sent {
+  @include flex-column;
   position: fixed;
   top: 20%;
   left: 50%;
-  @include flex-column;
   align-items: center;
   width: 320px;
   margin-left: -160px;

@@ -1,8 +1,8 @@
-let menuContainer = document.querySelector('.menu__container');
-let menuToggle = document.querySelector('.menu__menu-toggle');
-let menuToggleCross = document.querySelector('.menu__cross');
-let menuToggleBurger = document.querySelector('.menu__burger');
-let menuHead = document.querySelector('.menu__head');
+var menuContainer = document.querySelector('.menu__container');
+var menuToggle = document.querySelector('.menu__menu-toggle');
+var menuToggleCross = document.querySelector('.menu__cross');
+var menuToggleBurger = document.querySelector('.menu__burger');
+var menuHead = document.querySelector('.menu__head');
 menuContainer.classList.add('menu__script-on');
 menuToggleCross.classList.add('menu__script-on--menu-toggle-off');
 menuToggleBurger.classList.remove('menu__script-on--menu-toggle-off');

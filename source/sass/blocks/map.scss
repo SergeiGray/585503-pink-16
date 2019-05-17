@@ -35,10 +35,13 @@
 @media (min-width: $desktop-version) {
   .map__arrow-svg {
     top: -16px;
+    width: 120%;
   }
 }
 
 .map__frame {
+  width: 140%;
+  height: 200%;
   margin-left: -20%;
   margin-top: -25%;
 }

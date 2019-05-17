@@ -585,15 +585,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 280px;
 }
 
 @media (min-width: $tablet-version) {
   .grid-for-photos-users__custom-data {
     height: 100%;
+    width: 100%;
 
     &--panorama {
       position: relative;
       min-height: 120px;
+      width: 620px;
     }
   }
 }
@@ -602,6 +605,7 @@
   .grid-for-photos-users__custom-data {
     &--panorama {
       min-height: 96px;
+      width: 940px;
     }
   }
 }
@@ -663,7 +667,7 @@
 }
 
 .grid-for-footer__social {
-  margin-bottom: 35px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-version) {

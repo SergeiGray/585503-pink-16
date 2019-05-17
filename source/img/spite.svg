@@ -56,7 +56,7 @@
     <circle fill="inherit" stroke="#d22856" stroke-width="2" r="5" cx="7" cy="7"></circle>
   </symbol>
 
-   <symbol id="icon-bullet" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14">
+  <symbol id="icon-bullet" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 14 14">
     <circle fill="inherit" stroke="inherit" stroke-width="3" r="4" cx="7" cy="7"></circle>
   </symbol>
 
@@ -68,7 +68,7 @@
     <path fill="inherit" d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
   </symbol>
 
-  <symbol id="map-triangle" width="1200px" height="123px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
+  <symbol id="map-triangle" width="inherit" height="123px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
     <polygon fill="#ffffff" points="297.64,61.905 0,0 595.28,0 "/>
   </symbol>
 
