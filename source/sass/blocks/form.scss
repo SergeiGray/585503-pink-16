@@ -246,10 +246,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-top: 39px;
-
-  &--hidden-text {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-version) {
@@ -258,11 +254,13 @@
   }
 }
 
+.form__footnote-hidden {
+  display: none;
+}
+
 @media (min-width: $desktop-version) {
-  .form__footnote {
-    &--hidden-text {
-      display: inline;
-    }
+  .form__footnote-hidden {
+    display: inline;
   }
 }
 
@@ -315,10 +313,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 12px;
       right: 2px;
       width: 60px;
-      height: 64px;
+      height: 60px;
       background-color: #e5e5e5;
       background-image: url("../img/icon-phone.svg");
       background-repeat: no-repeat;
@@ -332,10 +330,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 12px;
       right: 2px;
       width: 60px;
-      height: 64px;
+      height: 60px;
       background-color: #e5e5e5;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;

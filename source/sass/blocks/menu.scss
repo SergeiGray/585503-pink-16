@@ -15,6 +15,11 @@
   border-bottom: 1px solid transparent;
   background-color: #283645;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  &--script-on {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+  }
 }
 
 @media (min-width: $desktop-version) {
@@ -95,23 +100,6 @@
   }
 }
 
-.menu__menu-toggle {
-  height: 24px;
-  margin-right: 20px;
-}
-
-@media (min-width: $tablet-version) {
-  .menu__menu-toggle {
-    margin-right: 0;
-  }
-}
-
-@media (min-width: $desktop-version) {
-  .menu__menu-toggle {
-    display: none;
-  }
-}
-
 .menu__item {
   font-size: 18px;
   text-transform: uppercase;
@@ -164,25 +152,33 @@
   }
 }
 
-.menu__script-on {
-  display: none;
+.menu__menu-toggle {
+  height: 24px;
+  margin-right: 20px;
+}
 
-  &--menu-head {
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: none;
+@media (min-width: $tablet-version) {
+  .menu__menu-toggle {
+    margin-right: 0;
   }
+}
 
-  &--menu-toggle-off {
+@media (min-width: $desktop-version) {
+  .menu__menu-toggle {
+    display: none;
+  }
+}
+
+.menu__container {
+  &--script-on {
     display: none;
   }
 }
 
 @media (min-width: $desktop-version) {
-  .menu__script-on {
-    display: flex;
-
-    &--menu-head {
-      background: none;
+  .menu__container {
+    &--script-on {
+      display: flex;
     }
   }
 }
@@ -190,6 +186,10 @@
 .menu__cross,
 .menu__burger {
   fill: #ffffff;
+
+  &--script-off {
+    display: none;
+  }
 
   &:hover {
     fill: #d22856;

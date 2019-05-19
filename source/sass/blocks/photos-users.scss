@@ -88,17 +88,21 @@
   }
 }
 
-.photos-users__image {
-  width: 100%;
-}
-
 .photos-users__picture {
   line-height: 0;
 }
 
-.photos-users__image--panorama {
-  width: 320;
-  height: 137;
+.program-interface__image {
+  width: 100%;
+}
+
+.photos-users__image {
+  width: 100%;
+
+  &--panorama {
+    width: 320;
+    height: 137;
+  }
 }
 
 @media (min-width: $tablet-version) {
