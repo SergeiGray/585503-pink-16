@@ -2,15 +2,14 @@
   margin: auto;
   width: 147px;
   height: 40px;
-  background-image: url("../img/logo-pink-blue-mobile.svg");
-  background-repeat: no-repeat;
+  fill: #283645;
 
   &:hover {
-    background-image: url("../img/logo-pink-blue-mobile-hover.svg");
+    fill: #d22856;
   }
 
   &:active {
-    background-image: url("../img/logo-pink-blue-mobile.svg");
+    fill: #283645;
     opacity: 0.3;
   }
 }
@@ -22,18 +21,24 @@
   }
 }
 
-@media (min-width: $desktop-version) {
-  .footer__logo {
-    background-image: url("../img/logo-pink-blue-desktop.svg");
-    background-repeat: no-repeat;
+.footer__logo-svg {
+  &--mobile {
+    display: block;
+  }
 
-    &:hover {
-      background-image: url("../img/logo-pink-blue-desktop-hover.svg");
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-version) {
+  .footer__logo-svg {
+    &--mobile {
+      display: none;
     }
 
-    &:active {
-      background-image: url("../img/logo-pink-blue-desktop.svg");
-      opacity: 0.3;
+    &--desktop {
+      display: block;
     }
   }
 }
