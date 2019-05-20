@@ -71,16 +71,24 @@
 }
 
 .grid-for-menu__item {
-  min-height: 63px;
+  min-height: 64px;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+  padding-top: 19px;
+}
+
+@media (min-width: $tablet-version) {
+  .grid-for-menu__item {
+    padding-top: 16px;
+  }
 }
 
 @media (min-width: $desktop-version) {
   .grid-for-menu__item {
     width: auto;
+    padding-top: 22px;
   }
 }
 
@@ -126,7 +134,7 @@
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: -67px;
+  margin-top: -64px;
 
   &--index-page {
     padding-top: 491px;
