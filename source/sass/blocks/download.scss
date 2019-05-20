@@ -3,6 +3,32 @@
   flex-direction: column;
 }
 
+@media (min-width: $desktop-version) {
+  .download {
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -6px;
+      left: 16px;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &::after {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
+    }
+  }
+}
+
 .download__slogan {
   display: none;
   width: 186px;

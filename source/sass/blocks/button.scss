@@ -9,19 +9,21 @@
   border-radius: 35px;
   padding-top: 12px;
   padding-bottom: 17px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+  color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 @media (min-width: $desktop-version) {
   .button {
     font-size: 21px;
-
-    &:hover {
-      background-color: #ffffff;
-      color: #d22856;
-    }
   }
 }
 
-.button:active .button__text {
-  opacity: 0.3;
-}
+

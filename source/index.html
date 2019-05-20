@@ -8,8 +8,8 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/snap.svg.min.js"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="js/svgxuse.js"></script>
   </head>
   <body>
     <header class="menu">
@@ -65,7 +65,7 @@
         <div class="wrapper">
           <div class="download grid-for-description__download">
             <p class="download__slogan grid-for-description__slogan">Взгляните на жизнь иначе!</p>
-            <a href="https://www.apple.com/ru/itunes/" class="button grid-for-description__button"><span class="button__text">Скачать приложение</span></a>
+            <a href="https://www.apple.com/ru/itunes/" class="button grid-for-description__button">Скачать приложение</a>
             <div class="platform grid-for-description__platform">
               <div class="platform__icons grid-for-description__icons">
                 <a href="https://www.apple.com/ru/itunes/">
@@ -179,37 +179,6 @@
           </svg>
         </div>
       </div>
-<!--       <div class="history wrapper">
-        <div class="history__author">
-          <div class="history__author-name">Николай Петров</div>
-          <div class="history__author-data">25 лет, водитель трамвая</div>
-        </div>
-        <svg class="history__quotes-svg" width="79" height="63">
-          <use xlink:href="img/spite.svg#icon-quotes"></use>
-        </svg>
-        <div  class="history__text-container">
-          <svg class="history__arrow-left-svg" width="22" height="41">
-            <use xlink:href="img/spite.svg#icon-arrow-left"></use>
-          </svg>
-          <blockquote class="history__text">
-            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-          </blockquote>
-          <svg class="history__arrow-right-svg"  width="22" height="41">
-            <use xlink:href="img/spite.svg#icon-arrow-right"></use>
-          </svg>
-        </div>
-        <div class="history__navigation">
-          <svg class="history__navigation-svg history__navigation-svg--active" width="14" height="14">
-            <use xlink:href="img/spite.svg#icon-bullet"></use>
-          </svg>
-          <svg class="history__navigation-svg" width="14" height="14">
-            <use xlink:href="img/spite.svg#icon-bullet"></use>
-          </svg>
-          <svg class="history__navigation-svg" width="14" height="14">
-            <use xlink:href="img/spite.svg#icon-bullet"></use>
-          </svg>
-        </div>
-      </div>   -->
       <div class="gradient-separator">
       </div>
       <div class="tariff">
@@ -347,16 +316,19 @@
         <div class="social grid-for-footer__social">
           <a href="" class="social__twitter">
             <svg class="social__twitter-svg" width="17" height="15">
+              <title>Twitter</title>
               <use xlink:href="img/spite.svg#icon-twitter"></use>
             </svg>
           </a>
           <a href="" class="social__facebook">
             <svg class="social__facebook-svg" width="9" height="19">
+              <title>Facebook</title>
               <use xlink:href="img/spite.svg#icon-facebook"></use>
             </svg>
           </a>
           <a href="" class="social__youtube">
             <svg class="social__youtube-svg" width="15" height="14">
+              <title>Youtube</title>
               <use xlink:href="img/spite.svg#icon-youtube"></use>
             </svg>
           </a>

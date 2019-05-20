@@ -107,7 +107,7 @@
 
 @media (min-width: $tablet-version) {
   .photos-users__image--panorama {
-    width: 700px;
+    min-width: 660px;
     height: 509px;
   }
 }
@@ -139,7 +139,7 @@
 @media (min-width: $tablet-version) {
   .photos-users__panorama-label {
     top: 56px;
-    right: 40px;
+    right: 20px;
   }
 }
 

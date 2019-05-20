@@ -362,6 +362,10 @@
   &:active {
     border: 2px solid #d22856;
   }
+
+  &:focus {
+    border: 2px solid #d22856;
+  }
 }
 
 @media (min-width: $tablet-version) {
